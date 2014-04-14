@@ -1,15 +1,15 @@
-M3
-==
+# M3
 
-Summary
--------
+
+## Summary
+
 M3 is a wrapper for D3 to allow integrate simple and complex datavisualization in your websit
 
-Features
---------
+### Features
+
 You can found a variety of charts types and you can mix it.
 
-===Charts===
+### Charts
 * Column Chart
 * Group Chart
 * Stacked Chart
@@ -27,10 +27,10 @@ You can found a variety of charts types and you can mix it.
 * Grouped Bar Charts (soon)
 * Stacked Bar Charts (soon)
 
-===Styling===
+### Styling
 All stiles are defined with CSS so you can create your own themes.
 
-===Behaviours===
+### Behaviours
 The charting interface only provide data visualization. If you want add any other functionality (like tooltip, mirror, etc) you have to create a <i>"behaviour"</i>.
 
 There are some builtin behaviours (and more to come):
@@ -38,7 +38,7 @@ There are some builtin behaviours (and more to come):
 * Legends
 * Grid background
 
-==Examples==
+## Examples
     var config = {
         width:400,
         height:300,
@@ -53,5 +53,5 @@ There are some builtin behaviours (and more to come):
     columnChart.behaviours = [new M3.behaviours.GridBackground()];
     columnChart.draw(data, M3.extend({}, config, {container:"#ex1"}));
 
-==Licence==
-<a href="http://opensource.org/licenses/BSD-3-Clause" target="_blank">BSD Licence</a>
+## Licence
+[BSD Licence](http://opensource.org/licenses/BSD-3-Clause "BSD Licence")
