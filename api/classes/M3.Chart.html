@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>M3.Chart - M3.Charting</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.7.0/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap-responsive.css">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+    <style>
+        .method .name code {
+            font-size: 14px;
+        }
+        .method .args code, .method .params .param-name {
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body class="yui3-skin-sam">
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <h1 class="brand" style="padding: 10px 16px 10px; height: 20px; line-height: 20px; margin-left: 0;">
+        
+	    <img alt="M3.Charting" src="../assets/css/logo.png" style="max-height: 65%;" title="M3.Charting">
+        
+            M3.Charting
+        </h1>
+	<div class="nav">
+            <li class="divider-vertical"></li>
+            <li>
+                <p class="navbar-text">
+                    API Docs for Version: <b>0.5.0</b>
+                </p>
+            </li>
+        </div>
+        <form class="navbar-form pull-right" style="line-height: 40px; height: 40px;">
+            <input style="margin-top: 0;" type="text" class="search-query" placeholder="Search for classes/modules..." data-obj='["classes/AreaChart", "classes/Axis", "classes/ColumnChart", "classes/DonutChart", "classes/LineChart", "classes/M3.AbstractCartesianChart", "classes/M3.AbstractChart", "classes/M3.AbstractPolarChart", "classes/M3.Axis.AxisItem", "classes/M3.Axis.AxisManager", "classes/M3.Axis.CategoryAxis", "classes/M3.Axis.CategoryPointsAxis", "classes/M3.Axis.LinealAxis", "classes/M3.Axis.Stacked100Axis", "classes/M3.Axis.StackedAxis", "classes/M3.Chart", "classes/M3.DataViz", "classes/M3.Series.AreaSerie", "classes/M3.Series.ChartSerie", "classes/M3.Series.ColumnSerie", "classes/M3.Series.GroupColumnSerie", "classes/M3.Series.StackedAreaSerie", "classes/M3.Series.StackedSerie", "classes/PieChart", "classes/Series", "classes/StackedAreaChart", "classes/StackedColumnChart", "modules/M3", "modules/M3.Axis", "modules/M3.Series"]'>
+        </form>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="span3">
+	    <div>
+    <h3>APIs</h3>
+    <div id="sidebar">
+        <ul id="main-nav" class="nav nav-tabs" style="margin-bottom:0;">
+            <li class="active"><a href="#classes" data-toggle="tab">Classes</a></li>
+            <li><a href="#modules" data-toggle="tab">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" placeholder="Type to filter APIs">
+        </div>
+
+        <div class="tab-content" style="border: 1px solid #DDD; border-top:0;">
+            <div class="tab-pane active" id="classes">
+                <ul id="api-classes" class="nav nav-list">
+                    
+                        <li><a href="../classes/AreaChart.html">AreaChart</a></li>
+                    
+                        <li><a href="../classes/Axis.html">Axis</a></li>
+                    
+                        <li><a href="../classes/ColumnChart.html">ColumnChart</a></li>
+                    
+                        <li><a href="../classes/DonutChart.html">DonutChart</a></li>
+                    
+                        <li><a href="../classes/LineChart.html">LineChart</a></li>
+                    
+                        <li><a href="../classes/M3.AbstractCartesianChart.html">M3.AbstractCartesianChart</a></li>
+                    
+                        <li><a href="../classes/M3.AbstractChart.html">M3.AbstractChart</a></li>
+                    
+                        <li><a href="../classes/M3.AbstractPolarChart.html">M3.AbstractPolarChart</a></li>
+                    
+                        <li><a href="../classes/M3.Axis.AxisItem.html">M3.Axis.AxisItem</a></li>
+                    
+                        <li><a href="../classes/M3.Axis.AxisManager.html">M3.Axis.AxisManager</a></li>
+                    
+                        <li><a href="../classes/M3.Axis.CategoryAxis.html">M3.Axis.CategoryAxis</a></li>
+                    
+                        <li><a href="../classes/M3.Axis.CategoryPointsAxis.html">M3.Axis.CategoryPointsAxis</a></li>
+                    
+                        <li><a href="../classes/M3.Axis.LinealAxis.html">M3.Axis.LinealAxis</a></li>
+                    
+                        <li><a href="../classes/M3.Axis.Stacked100Axis.html">M3.Axis.Stacked100Axis</a></li>
+                    
+                        <li><a href="../classes/M3.Axis.StackedAxis.html">M3.Axis.StackedAxis</a></li>
+                    
+                        <li><a href="../classes/M3.Chart.html">M3.Chart</a></li>
+                    
+                        <li><a href="../classes/M3.DataViz.html">M3.DataViz</a></li>
+                    
+                        <li><a href="../classes/M3.Series.AreaSerie.html">M3.Series.AreaSerie</a></li>
+                    
+                        <li><a href="../classes/M3.Series.ChartSerie.html">M3.Series.ChartSerie</a></li>
+                    
+                        <li><a href="../classes/M3.Series.ColumnSerie.html">M3.Series.ColumnSerie</a></li>
+                    
+                        <li><a href="../classes/M3.Series.GroupColumnSerie.html">M3.Series.GroupColumnSerie</a></li>
+                    
+                        <li><a href="../classes/M3.Series.StackedAreaSerie.html">M3.Series.StackedAreaSerie</a></li>
+                    
+                        <li><a href="../classes/M3.Series.StackedSerie.html">M3.Series.StackedSerie</a></li>
+                    
+                        <li><a href="../classes/PieChart.html">PieChart</a></li>
+                    
+                        <li><a href="../classes/Series.html">Series</a></li>
+                    
+                        <li><a href="../classes/StackedAreaChart.html">StackedAreaChart</a></li>
+                    
+                        <li><a href="../classes/StackedColumnChart.html">StackedColumnChart</a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="tab-pane" id="modules">
+                <ul id="api-modules" class="nav nav-list">
+                    
+                        <li><a href="../modules/M3.html">M3</a></li>
+                    
+                        <li><a href="../modules/M3.Axis.html">M3.Axis</a></li>
+                    
+                        <li><a href="../modules/M3.Series.html">M3.Series</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+        <div class="span9">
+                <form id="options-form" class="form-inline pull-right">
+        Show:
+        <label for="api-show-inherited" class="checkbox">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected" class="checkbox">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private" class="checkbox">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated" class="checkbox">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </form>
+
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <div class="page-header">
+    <h1>M3.Chart <small>Class</small></h1>
+</div>
+
+<div class="well well-small">
+    
+
+    
+        <div class="extends">
+            Extends <a href="../classes/M3.AbstractChart.html" class="crosslink">M3.AbstractChart</a>
+        </div>
+    
+
+    
+        <div class="foundat">
+            Defined in: <a href="../files/src_core_Chart.js.html#l3"><code>src\core\Chart.js:3</code></a>
+        </div>
+    
+
+    
+        
+            Module: <a href="../modules/M3.html">M3</a>
+        
+    
+
+    
+</div>
+
+
+
+<div class="well well-small">
+    <p>Base class for Charts.</p>
+
+</div>
+
+
+    <div class="constructor">
+        <h2>Constructor</h2>
+        <div id="method_M3.Chart" class="method item">
+    <h3 class="name"><code>M3.Chart</code></h3>
+
+    
+        <span class="paren">()</span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/src_core_Chart.js.html#l3"><code>src\core\Chart.js:3</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        
+    </div>
+
+    
+
+    
+
+    
+        <div class="example">
+            <h4>Example:</h4>
+
+            <div class="example-content">
+                <pre class="code prettyprint"><code>var configMixed = {
+    container:"#axis19",
+    width:350,
+    height:198,
+    margin:{bottom:20, top:5, left:5, right:5},
+    axis: [{pos:"left", clazz:"Axis.LinealAxis"},{pos:"bottom", clazz:"Axis.CategoryAxix", serie:"label"}],
+    series: [{
+        y:"left",
+        x:"bottom",
+        clazz:"ColumnSerie",
+    }]
+};
+var chart = new M3.Chart();
+chart.draw([{label:"Argentina", value:3455645}, {label:"Brasil", value:234234}], configMixed);</code></pre>
+
+            </div>
+        </div>
+    
+</div>
+
+    </div>
+
+
+<div>
+    <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#index">Index</a></li>
+
+        
+            <li><a data-toggle="tab" href="#methods">Methods</a></li>
+        
+        
+        
+        
+    </ul>
+
+    <div class="tab-content">
+        <div id="index" class="tab-pane active">
+            <h2 class="off-left">Item Index</h2>
+
+            
+                <div class="index-section methods">
+                    <h3>Methods</h3>
+
+                    <ul class="index-list methods extends">
+                        
+                            <li class="index-item method protected">
+                                <a href="#" data-tabid="#methods" data-anchor="#method_addAxis" data-tablink="addAxis">addAxis</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method protected">
+                                <a href="#" data-tabid="#methods" data-anchor="#method_configSerie" data-tablink="configSerie">configSerie</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method protected">
+                                <a href="#" data-tabid="#methods" data-anchor="#method_drawChartArea" data-tablink="drawChartArea">drawChartArea</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method protected">
+                                <a href="#" data-tabid="#methods" data-anchor="#method_drawSeries" data-tablink="drawSeries">drawSeries</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method inherited">
+                                <a href="#" data-tabid="#methods" data-anchor="#method_setConfig" data-tablink="setConfig">setConfig</a>
+
+                                
+                                
+                            </li>
+                        
+                    </ul>
+                </div>
+            
+
+            
+
+            
+
+            
+        </div>
+
+        
+            <div id="methods" class="tab-pane">
+                <h2 class="off-left">Methods</h2>
+
+                
+                    <div id="method_addAxis" class="method item protected">
+    <h3 class="name"><code>addAxis</code></h3>
+
+    
+        <span class="paren">()</span>
+    
+
+    
+
+    
+
+    
+        <span class="flag protected">protected</span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/src_core_Chart.js.html#l30"><code>src\core\Chart.js:30</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Create the AxisManger and initilize it.
+It&#39;s called form drawInner function</p>
+
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="method_configSerie" class="method item protected">
+    <h3 class="name"><code>configSerie</code></h3>
+
+    
+        <span class="paren">()</span>
+    
+
+    
+
+    
+
+    
+        <span class="flag protected">protected</span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/src_core_Chart.js.html#l85"><code>src\core\Chart.js:85</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>It&#39;s called from drawSeries.</p>
+
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="method_drawChartArea" class="method item protected">
+    <h3 class="name"><code>drawChartArea</code></h3>
+
+    
+        <span class="paren">()</span>
+    
+
+    
+
+    
+
+    
+        <span class="flag protected">protected</span>
+    
+
+    
+
+    
+
+    
+        <span class="flag chainable">chainable</span>
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/src_core_Chart.js.html#l101"><code>src\core\Chart.js:101</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Adds de SVG item container for series and the background.
+It&#39;s called form drawInner function.</p>
+
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="method_drawSeries" class="method item protected">
+    <h3 class="name"><code>drawSeries</code></h3>
+
+    
+        <span class="paren">()</span>
+    
+
+    
+
+    
+
+    
+        <span class="flag protected">protected</span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/src_core_Chart.js.html#l51"><code>src\core\Chart.js:51</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Initialize the series items and call to draw function to each.
+It&#39;s called from drawInner function.</p>
+
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="method_setConfig" class="method item inherited">
+    <h3 class="name"><code>setConfig</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>conf</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+        <span class="returns-inline">
+            <span class="type"></span>
+        </span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <span class="flag chainable">chainable</span>
+    
+
+    
+
+    <div class="meta">
+        
+            
+                <p>Inherited from
+                <a href="../classes/M3.AbstractChart.html#method_setConfig">M3.AbstractChart</a>:
+            
+        
+        
+        <a href="../files/src_core_AbstractChart.js.html#l13"><code>src\core\AbstractChart.js:13</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p><p>Adds some configuration properties to DataViz. To see the complete list of properties, please go to 
+the super class definition.</p></p>
+<table>
+    <thead>
+        <tr><th>Property</th><th>Default</th><th>Description</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>itemVAlue</td><td>value</td>Property name on data values to get the value</td></tr>
+        <tr><td>itemLabel</td><td>label</td></td></tr>
+        <tr><td>labelFormat</td><td></td></td></tr>
+        <tr><td>defaultValueFormat</td><td></td></td></tr>
+    </tbody>
+</table>
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">conf</code>
+                        <span class="type">Object</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>object with properties</p>
+
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                
+                    
+                    <p>Instance reference</p>
+
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+                
+            </div>
+        
+
+        
+
+        
+
+        
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/jquery/jquery-1.8.2.min.js"></script>
+<script src="../assets/vendor/bootstrap/js/bootstrap.js"></script>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script src="../assets/js/yuidoc-bootstrap.js"></script>
+<script>prettyPrint();</script>
+</body>
+</html>

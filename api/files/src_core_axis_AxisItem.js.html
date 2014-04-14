@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>src\core\axis\AxisItem.js - M3.Charting</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.7.0/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap-responsive.css">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+    <style>
+        .method .name code {
+            font-size: 14px;
+        }
+        .method .args code, .method .params .param-name {
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body class="yui3-skin-sam">
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <h1 class="brand" style="padding: 10px 16px 10px; height: 20px; line-height: 20px; margin-left: 0;">
+        
+	    <img alt="M3.Charting" src="../assets/css/logo.png" style="max-height: 65%;" title="M3.Charting">
+        
+            M3.Charting
+        </h1>
+	<div class="nav">
+            <li class="divider-vertical"></li>
+            <li>
+                <p class="navbar-text">
+                    API Docs for Version: <b>0.5.0</b>
+                </p>
+            </li>
+        </div>
+        <form class="navbar-form pull-right" style="line-height: 40px; height: 40px;">
+            <input style="margin-top: 0;" type="text" class="search-query" placeholder="Search for classes/modules..." data-obj='["classes/AreaChart", "classes/Axis", "classes/ColumnChart", "classes/DonutChart", "classes/LineChart", "classes/M3.AbstractCartesianChart", "classes/M3.AbstractChart", "classes/M3.AbstractPolarChart", "classes/M3.Axis.AxisItem", "classes/M3.Axis.AxisManager", "classes/M3.Axis.CategoryAxis", "classes/M3.Axis.CategoryPointsAxis", "classes/M3.Axis.LinealAxis", "classes/M3.Axis.Stacked100Axis", "classes/M3.Axis.StackedAxis", "classes/M3.Chart", "classes/M3.DataViz", "classes/M3.Series.AreaSerie", "classes/M3.Series.ChartSerie", "classes/M3.Series.ColumnSerie", "classes/M3.Series.GroupColumnSerie", "classes/M3.Series.StackedAreaSerie", "classes/M3.Series.StackedSerie", "classes/PieChart", "classes/Series", "classes/StackedAreaChart", "classes/StackedColumnChart", "modules/M3", "modules/M3.Axis", "modules/M3.Series"]'>
+        </form>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="span3">
+	    <div>
+    <h3>APIs</h3>
+    <div id="sidebar">
+        <ul id="main-nav" class="nav nav-tabs" style="margin-bottom:0;">
+            <li class="active"><a href="#classes" data-toggle="tab">Classes</a></li>
+            <li><a href="#modules" data-toggle="tab">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" placeholder="Type to filter APIs">
+        </div>
+
+        <div class="tab-content" style="border: 1px solid #DDD; border-top:0;">
+            <div class="tab-pane active" id="classes">
+                <ul id="api-classes" class="nav nav-list">
+                    
+                        <li><a href="../classes/AreaChart.html">AreaChart</a></li>
+                    
+                        <li><a href="../classes/Axis.html">Axis</a></li>
+                    
+                        <li><a href="../classes/ColumnChart.html">ColumnChart</a></li>
+                    
+                        <li><a href="../classes/DonutChart.html">DonutChart</a></li>
+                    
+                        <li><a href="../classes/LineChart.html">LineChart</a></li>
+                    
+                        <li><a href="../classes/M3.AbstractCartesianChart.html">M3.AbstractCartesianChart</a></li>
+                    
+                        <li><a href="../classes/M3.AbstractChart.html">M3.AbstractChart</a></li>
+                    
+                        <li><a href="../classes/M3.AbstractPolarChart.html">M3.AbstractPolarChart</a></li>
+                    
+                        <li><a href="../classes/M3.Axis.AxisItem.html">M3.Axis.AxisItem</a></li>
+                    
+                        <li><a href="../classes/M3.Axis.AxisManager.html">M3.Axis.AxisManager</a></li>
+                    
+                        <li><a href="../classes/M3.Axis.CategoryAxis.html">M3.Axis.CategoryAxis</a></li>
+                    
+                        <li><a href="../classes/M3.Axis.CategoryPointsAxis.html">M3.Axis.CategoryPointsAxis</a></li>
+                    
+                        <li><a href="../classes/M3.Axis.LinealAxis.html">M3.Axis.LinealAxis</a></li>
+                    
+                        <li><a href="../classes/M3.Axis.Stacked100Axis.html">M3.Axis.Stacked100Axis</a></li>
+                    
+                        <li><a href="../classes/M3.Axis.StackedAxis.html">M3.Axis.StackedAxis</a></li>
+                    
+                        <li><a href="../classes/M3.Chart.html">M3.Chart</a></li>
+                    
+                        <li><a href="../classes/M3.DataViz.html">M3.DataViz</a></li>
+                    
+                        <li><a href="../classes/M3.Series.AreaSerie.html">M3.Series.AreaSerie</a></li>
+                    
+                        <li><a href="../classes/M3.Series.ChartSerie.html">M3.Series.ChartSerie</a></li>
+                    
+                        <li><a href="../classes/M3.Series.ColumnSerie.html">M3.Series.ColumnSerie</a></li>
+                    
+                        <li><a href="../classes/M3.Series.GroupColumnSerie.html">M3.Series.GroupColumnSerie</a></li>
+                    
+                        <li><a href="../classes/M3.Series.StackedAreaSerie.html">M3.Series.StackedAreaSerie</a></li>
+                    
+                        <li><a href="../classes/M3.Series.StackedSerie.html">M3.Series.StackedSerie</a></li>
+                    
+                        <li><a href="../classes/PieChart.html">PieChart</a></li>
+                    
+                        <li><a href="../classes/Series.html">Series</a></li>
+                    
+                        <li><a href="../classes/StackedAreaChart.html">StackedAreaChart</a></li>
+                    
+                        <li><a href="../classes/StackedColumnChart.html">StackedColumnChart</a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="tab-pane" id="modules">
+                <ul id="api-modules" class="nav nav-list">
+                    
+                        <li><a href="../modules/M3.html">M3</a></li>
+                    
+                        <li><a href="../modules/M3.Axis.html">M3.Axis</a></li>
+                    
+                        <li><a href="../modules/M3.Series.html">M3.Series</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+        <div class="span9">
+                <form id="options-form" class="form-inline pull-right">
+        Show:
+        <label for="api-show-inherited" class="checkbox">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected" class="checkbox">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private" class="checkbox">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated" class="checkbox">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </form>
+
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <div class="page-header">
+    <h1>src\core\axis\AxisItem.js <small>File</small></h1>
+</div>
+
+<div class="file">
+    <pre class="prettyprint linenums">
+(function() {
+    
+    &quot;use strict&quot;;
+    /**
+    Module for axis
+    
+    @module M3
+    @submodule M3.Axis
+    */
+    M3.Axis = {};
+    
+    /**
+    Class to draw an Axis.
+    
+    @class M3.Axis.AxisItem
+    @constructor
+    @module M3
+    @submodule M3.Axis
+    
+    @example 
+        var width = 200, height:100. xOffset = 10, yOffset = 10;
+        var axis = new M3.AxisItem();
+        axis.config(config).canvas(d3.select(&quot;.m3 .canvas&quot;)).data(datos).draw(width, height, xOffset, yOffset);
+    */
+    M3.Axis.AxisItem = function () {
+        this._config = null;
+        this._data = null;
+        this.scale = null;
+        this.axis = null;
+        this.axisSVG = null;
+        this._canvas = null;
+        this._h = 0;
+        this._w = 0;
+    };
+    
+    /**
+    Set the Canvas chart. Is the place where the axis will be drawn.
+    
+    @method canvas
+    @param value {Object} Reference to a svg element
+    @chainable
+    @return AxisItem (this).
+    */
+    M3.Axis.AxisItem.prototype.canvas = function(value) {
+        this._canvas = value;
+        return this;
+    };
+    
+    /**
+    Extend the settings passed as a parameter to add the missing properties.
+    
+    Default properties:
+    {
+    
+    }
+    
+    @private
+    @method defaultConfig.
+    @param conf {Object}
+    @return A mixin object between conf and default object properties.
+    
+    @todo Refactoring: pasar la configuracion default que esta en AxisMAnager acá
+    */
+    M3.Axis.AxisItem.prototype.defaultConfig = function (conf) {
+        return M3.extend({}, {
+                            },
+                            conf);
+    };
+    
+    /**
+    Set the configuration to the axis
+    
+    __Properties accepted:__
+    &lt;table&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;&lt;th&gt;Config property&lt;/th&gt;&lt;th&gt;Optional&lt;/th&gt;&lt;th&gt;Default&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;&lt;td&gt;pos&lt;/td&gt;&lt;td&gt;No&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Posicion del eje [left, right, bottom, top].&lt;/td&gt;&lt;/tr&gt;
+            &lt;tr&gt;&lt;td&gt;label&lt;/td&gt;&lt;td&gt;Yes&lt;/td&gt;Empty value&lt;td&gt;&lt;/td&gt;&lt;td&gt;Nombre del eje.&lt;/td&gt;&lt;/tr&gt;
+            &lt;tr&gt;&lt;td&gt;labelPosition&lt;/td&gt;&lt;td&gt;Yes&lt;/td&gt;&lt;td&gt;none&lt;/td&gt;&lt;td&gt;[none, inner, outer] @default outer.&lt;/td&gt;&lt;/tr&gt;
+            &lt;tr&gt;&lt;td&gt;serie&lt;/td&gt;&lt;td&gt;Yes&lt;/td&gt;&lt;td&gt;value&lt;/td&gt;&lt;td&gt;Nombre de la propiedad que se mostrará sobre el eje. Puede ser un string o un array si varias series se plotean sobre el eje.&lt;/td&gt;&lt;/tr&gt;
+            &lt;tr&gt;&lt;td&gt;width&lt;/td&gt;&lt;td&gt;Yes&lt;/td&gt;&lt;td&gt;35 for y axis, 20 for x axis&lt;/td&gt;&lt;td&gt;Ancho del espacio del eje.&lt;/td&gt;&lt;/tr&gt;
+            &lt;tr&gt;&lt;td&gt;show&lt;/td&gt;&lt;td&gt;Yes&lt;/td&gt;&lt;td&gt;True&lt;/td&gt;&lt;td&gt;Indica si se visualiza o no el eje.&lt;/td&gt;&lt;/tr&gt;
+            &lt;tr&gt;&lt;td&gt;labelWidth&lt;/td&gt;&lt;td&gt;Yes&lt;/td&gt;&lt;td&gt;18&lt;/td&gt;&lt;td&gt;Ancho del espacio para el label del eje.&lt;/td&gt;&lt;/tr&gt;
+            &lt;tr&gt;&lt;td&gt;clazz&lt;/td&gt;&lt;td&gt;Yes&lt;/td&gt;&lt;td&gt;Axis.LinealAxis&lt;/td&gt;&lt;td&gt;Nombre de la clase del axis a crear.&lt;/td&gt;&lt;/tr&gt;
+            &lt;tr&gt;&lt;td&gt;axis&lt;/td&gt;&lt;td&gt;Yes&lt;/td&gt;&lt;td&gt;y when pos is left/right, x when pos is top/bottom&lt;/td&gt;&lt;td&gt;[x,y].&lt;/td&gt;&lt;/tr&gt;
+            &lt;tr&gt;&lt;td&gt;ticketSize&lt;/td&gt;&lt;td&gt;Yes&lt;/td&gt;&lt;td&gt;6 (d3 defaul)&lt;/td&gt;&lt;td&gt;The size of de line of each tick on the axis (default: 6).&lt;/td&gt;&lt;/tr&gt;
+            &lt;tr&gt;&lt;td&gt;tickPadding&lt;/td&gt;&lt;td&gt;Yes&lt;/td&gt;&lt;td&gt;3 (d3 default)&lt;/td&gt;&lt;td&gt;The space between the line tick with the label of tick.&lt;/td&gt;&lt;/tr&gt;
+            &lt;tr&gt;&lt;td&gt;tickFormat&lt;/td&gt;&lt;td&gt;Yes&lt;/td&gt;&lt;td&gt;&quot;s&quot; (d3 default format). For x axis don&#x27;t trasnform the label&lt;/td&gt;&lt;td&gt;Format function for each tick label.
+            If chart config has _labelFormat_ or/and _valueFormat_ it&#x27;s are the default values.&lt;br&gt;_Example:_
+                function(d, indx) {
+                    return d3.format(&quot;s&quot;);
+                }
+            &lt;/td&gt;&lt;/tr&gt;
+        &lt;/tbdoy&gt;
+    &lt;/table&gt;
+    
+    @method config
+    @param value {Object}
+    @chainable
+    @return Mixed object between value and default properties.
+    */
+    M3.Axis.AxisItem.prototype.config = function(value) {
+        this._config = this.defaultConfig(value);
+        return this;
+    };
+    
+    /**
+    Set data values.
+    
+    @method data
+    @param value {Array}
+    @chainable
+    @return AxisItem (this)
+    */
+    M3.Axis.AxisItem.prototype.data = function(value) {
+        this._data = value;
+        return this;
+    };
+    
+    /**
+    Get the scale for the axis. 
+    (Scale factory)
+    
+    @method getAxisScale
+    @param values
+    @protected
+    */
+    M3.Axis.AxisItem.prototype.getAxisScale = function(values) {
+        var scope = this;
+        this.scale = d3.scale.linear().range(values);
+        var max = d3.max(scope._data, function(d){
+                                                return +d[scope._config.serie];
+                                            });
+        this.scale.domain([0, max]);
+        return this.scale;
+    };
+    
+    /**
+    Set the scale for the axis
+    
+    @method getScale
+    @protected
+    */
+    M3.Axis.AxisItem.prototype.getScale = function() {
+        var values = null;
+        if(this._config.axis == &quot;y&quot;) {
+            values = [this._h, 0];
+        } else {
+            values = [0, this._w];
+        }
+        
+        this.scale = this.getAxisScale(values);
+        
+        return this.scale;
+    };
+    
+    /**
+    Create the d3 axis.
+    
+    @method getAxis
+    @return D3 axis reference.
+    @protected
+    */
+    M3.Axis.AxisItem.prototype.getAxis = function() {
+        var scope = this;
+
+        this.axis = d3.svg.axis()
+            .scale(scope.getScale())
+            .orient(this._config.pos);
+        
+        if(this._config.tickFormat !== null) { this.axis.tickFormat(this._config.tickFormat); }
+        if(!isNaN(this._config.tickSize)) { this.axis.innerTickSize(this._config.tickSize); }
+        if(!isNaN(this._config.tickPadding)) { this.axis.tickPadding(this._config.tickPadding); }
+        
+        return this.axis;
+    };
+    
+    /**
+    Add a rect as backgroud for the axis.
+    
+    @method addRect
+    @param elem {Object} reference to the axis avg.
+    @param w {Number} With of the rectange background
+    @param h {Number} Heigt of the rectange background
+    
+    @protected
+    */
+    M3.Axis.AxisItem.prototype.addRect = function(elem, w, h) {
+        return elem.insert(&quot;rect&quot;, &quot;g&quot;)
+            .attr(&quot;class&quot;, &quot;background&quot;)
+            .attr(&quot;width&quot;, w)
+            .attr(&quot;height&quot;, h)
+            .attr(&quot;transform&quot;, &quot;translate(&quot; + ((this._config.axis == &quot;y&quot; &amp;&amp; this._config.pos == &quot;left&quot;)?(w * -1):0) + &quot;, &quot; + 0 + &quot;)&quot;);
+    };
+    
+    /**
+    Add Axis label (title).
+    
+    @method addLabel
+    @param elem {Object} reference to axis svg.
+    @protected
+    */
+    M3.Axis.AxisItem.prototype.addLabel = function(elem) {
+        if(this._config.labelPosition != &quot;none&quot;) {
+            var txt = this._config.label;
+            var text = elem.append(&quot;text&quot;);
+            var y, x, transform = &quot;&quot;, dy;
+            text.text(txt);
+            if(this._config.labelPosition == &quot;outer&quot;) {
+                if(this._config.axis == &quot;y&quot;) {
+                    y = (this._config.pos == &quot;left&quot;)? (this._config.width * -1) : this._config.width;
+                    x = elem.select(&quot;rect&quot;).attr(&quot;height&quot;) / -2;
+                    transform =  &quot;rotate(-90)&quot;;
+                    dy = (this._config.pos === &quot;left&quot;) ?  &quot;-0.5em&quot; : &quot;1em&quot;;
+                } else {
+                    x = elem.select(&quot;rect&quot;).attr(&quot;width&quot;) / 2;
+                    y = (this._config.pos==&quot;bottom&quot;)?this._config.width:(this._config.width * -1);
+                    dy = (this._config.pos==&quot;bottom&quot;)?&quot;1em&quot;:&quot;-0.5em&quot;;
+                }
+                text.attr(&quot;y&quot;, y)
+                    .attr(&quot;x&quot;, x)
+                    .attr(&quot;transform&quot;, transform)
+                    .attr(&quot;dy&quot;, dy)
+                    .style(&quot;text-anchor&quot;, &quot;middle&quot;)
+                    .attr(&quot;class&quot;, &quot;label&quot;);
+            } else {
+                if(this._config.axis == &quot;y&quot;) {
+                    dy = (this._config.pos==&quot;left&quot;)?&quot;0.5em&quot;:&quot;-1em&quot;;
+                    y = 6;
+                    transform = &quot;rotate(-90)&quot;;
+                }
+                text.attr(&quot;transform&quot;, transform)
+                    .attr(&quot;y&quot;, y)
+                    .attr(&quot;dy&quot;, dy)
+                    .attr(&quot;x&quot;, x)
+                    .style(&quot;text-anchor&quot;, &quot;end&quot;);
+            }
+        }
+    };
+
+    /**
+    Draw the axis into the canvas.
+    
+    @method draw
+    @param w {Number} Wicth of the axis
+    @param h {Number} Height of the axis
+    @param x {Number} Offsset from the left border canvas
+    @param y {Number} Offsset from the left border canvas
+    @chainable
+    */
+    M3.Axis.AxisItem.prototype.draw = function(w, h, x, y) {
+        this._w = w;
+        this._h = h;
+        
+        this.getAxis();
+        
+        if(this._config.show) {
+            this.axisSVG = this._canvas.append(&quot;g&quot;)
+                .attr(&quot;class&quot;, this._config.axis + &quot; axis &quot; + this._config.axis + this._config.pos)
+                .attr(&quot;transform&quot;, &quot;translate(&quot; + x + &quot;, &quot; + y + &quot;)&quot;)
+                .call(this.axis);
+        
+            this.addRect(this.axisSVG, w, h);
+            this.addLabel(this.axisSVG);
+        }
+
+        return this;
+    };
+})();
+    </pre>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/jquery/jquery-1.8.2.min.js"></script>
+<script src="../assets/vendor/bootstrap/js/bootstrap.js"></script>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script src="../assets/js/yuidoc-bootstrap.js"></script>
+<script>prettyPrint();</script>
+</body>
+</html>

@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>src\core\axis\Axis.js - M3.Charting</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.7.0/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap-responsive.css">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+    <style>
+        .method .name code {
+            font-size: 14px;
+        }
+        .method .args code, .method .params .param-name {
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body class="yui3-skin-sam">
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <h1 class="brand" style="padding: 10px 16px 10px; height: 20px; line-height: 20px; margin-left: 0;">
+        
+	    <img alt="M3.Charting" src="../assets/css/logo.png" style="max-height: 65%;" title="M3.Charting">
+        
+            M3.Charting
+        </h1>
+	<div class="nav">
+            <li class="divider-vertical"></li>
+            <li>
+                <p class="navbar-text">
+                    API Docs for Version: <b>0.5.0</b>
+                </p>
+            </li>
+        </div>
+        <form class="navbar-form pull-right" style="line-height: 40px; height: 40px;">
+            <input style="margin-top: 0;" type="text" class="search-query" placeholder="Search for classes/modules..." data-obj='["classes/AreaChart", "classes/Axis", "classes/ColumnChart", "classes/DonutChart", "classes/LineChart", "classes/M3.AbstractCartesianChart", "classes/M3.AbstractChart", "classes/M3.AbstractPolarChart", "classes/M3.Axis.AxisItem", "classes/M3.Axis.AxisManager", "classes/M3.Axis.CategoryAxis", "classes/M3.Axis.CategoryPointsAxis", "classes/M3.Axis.LinealAxis", "classes/M3.Axis.Stacked100Axis", "classes/M3.Axis.StackedAxis", "classes/M3.Chart", "classes/M3.DataViz", "classes/M3.Series.AreaSerie", "classes/M3.Series.ChartSerie", "classes/M3.Series.ColumnSerie", "classes/M3.Series.GroupColumnSerie", "classes/M3.Series.StackedAreaSerie", "classes/M3.Series.StackedSerie", "classes/PieChart", "classes/Series", "classes/StackedAreaChart", "classes/StackedColumnChart", "modules/M3", "modules/M3.Axis", "modules/M3.Series"]'>
+        </form>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="span3">
+	    <div>
+    <h3>APIs</h3>
+    <div id="sidebar">
+        <ul id="main-nav" class="nav nav-tabs" style="margin-bottom:0;">
+            <li class="active"><a href="#classes" data-toggle="tab">Classes</a></li>
+            <li><a href="#modules" data-toggle="tab">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" placeholder="Type to filter APIs">
+        </div>
+
+        <div class="tab-content" style="border: 1px solid #DDD; border-top:0;">
+            <div class="tab-pane active" id="classes">
+                <ul id="api-classes" class="nav nav-list">
+                    
+                        <li><a href="../classes/AreaChart.html">AreaChart</a></li>
+                    
+                        <li><a href="../classes/Axis.html">Axis</a></li>
+                    
+                        <li><a href="../classes/ColumnChart.html">ColumnChart</a></li>
+                    
+                        <li><a href="../classes/DonutChart.html">DonutChart</a></li>
+                    
+                        <li><a href="../classes/LineChart.html">LineChart</a></li>
+                    
+                        <li><a href="../classes/M3.AbstractCartesianChart.html">M3.AbstractCartesianChart</a></li>
+                    
+                        <li><a href="../classes/M3.AbstractChart.html">M3.AbstractChart</a></li>
+                    
+                        <li><a href="../classes/M3.AbstractPolarChart.html">M3.AbstractPolarChart</a></li>
+                    
+                        <li><a href="../classes/M3.Axis.AxisItem.html">M3.Axis.AxisItem</a></li>
+                    
+                        <li><a href="../classes/M3.Axis.AxisManager.html">M3.Axis.AxisManager</a></li>
+                    
+                        <li><a href="../classes/M3.Axis.CategoryAxis.html">M3.Axis.CategoryAxis</a></li>
+                    
+                        <li><a href="../classes/M3.Axis.CategoryPointsAxis.html">M3.Axis.CategoryPointsAxis</a></li>
+                    
+                        <li><a href="../classes/M3.Axis.LinealAxis.html">M3.Axis.LinealAxis</a></li>
+                    
+                        <li><a href="../classes/M3.Axis.Stacked100Axis.html">M3.Axis.Stacked100Axis</a></li>
+                    
+                        <li><a href="../classes/M3.Axis.StackedAxis.html">M3.Axis.StackedAxis</a></li>
+                    
+                        <li><a href="../classes/M3.Chart.html">M3.Chart</a></li>
+                    
+                        <li><a href="../classes/M3.DataViz.html">M3.DataViz</a></li>
+                    
+                        <li><a href="../classes/M3.Series.AreaSerie.html">M3.Series.AreaSerie</a></li>
+                    
+                        <li><a href="../classes/M3.Series.ChartSerie.html">M3.Series.ChartSerie</a></li>
+                    
+                        <li><a href="../classes/M3.Series.ColumnSerie.html">M3.Series.ColumnSerie</a></li>
+                    
+                        <li><a href="../classes/M3.Series.GroupColumnSerie.html">M3.Series.GroupColumnSerie</a></li>
+                    
+                        <li><a href="../classes/M3.Series.StackedAreaSerie.html">M3.Series.StackedAreaSerie</a></li>
+                    
+                        <li><a href="../classes/M3.Series.StackedSerie.html">M3.Series.StackedSerie</a></li>
+                    
+                        <li><a href="../classes/PieChart.html">PieChart</a></li>
+                    
+                        <li><a href="../classes/Series.html">Series</a></li>
+                    
+                        <li><a href="../classes/StackedAreaChart.html">StackedAreaChart</a></li>
+                    
+                        <li><a href="../classes/StackedColumnChart.html">StackedColumnChart</a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="tab-pane" id="modules">
+                <ul id="api-modules" class="nav nav-list">
+                    
+                        <li><a href="../modules/M3.html">M3</a></li>
+                    
+                        <li><a href="../modules/M3.Axis.html">M3.Axis</a></li>
+                    
+                        <li><a href="../modules/M3.Series.html">M3.Series</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+        <div class="span9">
+                <form id="options-form" class="form-inline pull-right">
+        Show:
+        <label for="api-show-inherited" class="checkbox">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected" class="checkbox">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private" class="checkbox">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated" class="checkbox">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </form>
+
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <div class="page-header">
+    <h1>src\core\axis\Axis.js <small>File</small></h1>
+</div>
+
+<div class="file">
+    <pre class="prettyprint linenums">
+(function() {
+    &quot;use strict&quot;;
+    /**
+    Class to manage Axis
+
+    @class Axis
+    @constructor
+    */
+    M3.Axis = function () {
+
+    };
+
+    /**
+    @property data
+    */
+    M3.Axis.prototype.data = null;
+    /**
+    @property config
+    */
+    M3.Axis.prototype.config = null;
+    /**
+    @property canvas
+    */
+    M3.Axis.prototype.canvas = null;
+    /**
+    @property hasXBottom
+    */
+    M3.Axis.prototype.hasXBottom = false;
+    /**
+    @property hasXLeft
+    */
+    M3.Axis.prototype.hasYLeft = false;
+    /**
+    @property hasYRight
+    */
+    M3.Axis.prototype.hasYRight = false;
+    /**
+    @property hasXTop
+    */
+    M3.Axis.prototype.hasXTop = false;
+    
+    M3.Axis.prototype.axisXType = &quot;ranges&quot;;
+    
+    M3.Axis.prototype.xbottom = {scale:null, axis:null};
+    M3.Axis.prototype.xtop = {scale:null, axis:null};
+    M3.Axis.prototype.yleft = {scale:null, axis:null};
+    M3.Axis.prototype.yright = {scale:null, axis:null};;
+    
+    /**
+    Devuelve el texto del label del axis si es outer
+    @method hasAxisOuterLabel
+    @param axis {String}
+    @param orient {String}
+    */
+    M3.Axis.prototype.hasAxisOuterLabel = function(axis, orient) {
+        var scope = this;
+        var uAxis = axis.toUpperCase();
+        var txt = &quot;&quot;;
+        if(scope.config[&quot;axisLabel&quot; + uAxis + &quot;Position&quot;] == &quot;outer&quot;) {
+            txt = scope.config[&quot;axis&quot; + uAxis + &quot;Label&quot; + orient];
+            txt = (txt === undefined || txt === null) ? &quot;&quot; : txt;
+        }
+        return txt;
+    };
+
+    /**
+    Devuelve el texto del label del axis si es inner
+    @method hasAxisInnerLabel
+    @param axis {String}
+    @param orient {String}
+    */
+    M3.Axis.prototype.hasAxisInnerLabel = function(axis, orient) {
+        var scope = this;
+        var uAxis = axis.toUpperCase();
+        var txt = &quot;&quot;;
+        if(scope.config[&quot;axisLabel&quot; + uAxis + &quot;Position&quot;] == &quot;inner&quot;) {
+            txt = scope.config[&quot;axis&quot; + uAxis + &quot;Label&quot; + orient];
+            txt = (txt === undefined || txt === null) ? &quot;&quot; : txt;
+        }
+        return txt;
+    };
+
+    /**
+    Get scale for x axis.
+
+    @method getXScale
+    @param orient {String} [top, bottom].
+    @return A d3.scale() with configuration applied.
+    */
+    M3.Axis.prototype.getXScale = function(orient) {
+        var scope = this;
+        var start, end, scale, padding, label;
+
+        start = 0;
+        end = scope.config.canvasWidth - ((scope.hasYLeft?scope.config.widthYLeft:0) + (scope.hasYRight?scope.config.widthYRight:0));
+        label = scope.hasAxisOuterLabel(&quot;y&quot;, &quot;left&quot;);
+        end -= (label !== &quot;&quot; &amp;&amp; scope.hasYLeft) ? scope.config.axisLabelWidth : 0;
+        label = scope.hasAxisOuterLabel(&quot;y&quot;, &quot;right&quot;);
+        end -= (label !== &quot;&quot; &amp;&amp; scope.hasYRight) ? scope.config.axisLabelWidth : 0;
+
+        padding = 0.1;
+        if(this.axisXType == &quot;ranges&quot;) {
+            scale = d3.scale.ordinal().rangeRoundBands([start, end], padding);
+        } else {
+            scale = d3.scale.ordinal().rangePoints([start, end], 0.05);
+        }
+
+        scale.domain(scope.data.map(function(d) {
+                                        var item = scope.config[&quot;itemLabel&quot;+orient];
+                                        item = (item === &quot;&quot;)?scope.config.itemLabel:item;
+                                        return d[item];
+                                    }));
+        scope[&quot;x&quot; + orient].scale = scale;
+        return scale;
+    };
+
+    /**
+    Get X Axis with some orientation.
+
+    @method getXAxis
+    @param orient {String} [top, bottom].
+    @return A d3.svg.axis() with the configuratino applied.
+    */
+    M3.Axis.prototype.getXAxis = function(orient) {
+        this[&quot;x&quot; + orient].axis = d3.svg.axis()
+            .scale(this.getXScale(orient))
+            .orient(orient);
+        return this[&quot;x&quot; + orient].axis;
+    };
+
+    /**
+    Get scale for y axis.
+
+    @method getYScale
+    @param orient {String} [top, bottom].
+    @return A d3.scale() with configuration applied.
+    */
+    M3.Axis.prototype.getYScale = function(orient) {
+        var start, end, scale, label;
+        var scope = this;
+
+        start = scope.config.canvasHeight - ((scope.hasXTop?scope.config.heightXTop:0) + (scope.hasXBottom?scope.config.heightXBottom:0));
+        label = scope.hasAxisOuterLabel(&quot;x&quot;, &quot;top&quot;);
+        start -= (label !== &quot;&quot; &amp;&amp; scope.hasXTop) ? scope.config.axisLabelWidth : 0;
+        label = scope.hasAxisOuterLabel(&quot;x&quot;, &quot;bottom&quot;);
+        start -= (label !== &quot;&quot; &amp;&amp; scope.hasXBottom) ? scope.config.axisLabelWidth : 0;
+        end = 0;
+        scale = d3.scale.linear().range([start, end]);
+
+        scale.domain([0, d3.max(scope.data, function(d){
+                                                return scope.yMaxFunction(d, scope.config, orient);
+                                            })]);
+        this[&quot;y&quot; + orient].scale = scale;
+        return scale;
+    };
+    
+    M3.Axis.prototype.yMaxFunction = function(d, config, orient) {
+                                                        var item = config[&quot;itemValue&quot;+orient];
+                                                        item = (item === &quot;&quot;)?config.itemValue:item;
+                                                        return d[item];
+                                                    }
+    
+    /**
+    Get Y Axis with some orientation.
+
+    @method getYAxis
+    @param orient {String} [left, right].
+    @return A d3.svg.axis() with the configuratino applied.
+    */
+    M3.Axis.prototype.getYAxis = function(orient) {
+        var scope = this;
+
+        var axisSvg = d3.svg.axis()
+            .scale(scope.getYScale(orient))
+            .orient(orient);
+
+        if(scope.config.yLabelFormat !== null) { axisSvg.tickFormat(scope.config.yLabelFormat); }
+        if(!isNaN(scope.config.ticks)) { axisSvg.ticks(scope.config.ticks); }
+        
+        this[&quot;y&quot; + orient].axis = axisSvg;
+        return axisSvg;
+    };
+
+    /**
+    Add SVG for axis to the canvas
+
+    @method addAxes
+    @param canvas {String}
+    @param x {String} Offset X
+    @param y {String} Offset Y
+    @param axis {String} [x, y]
+    @param orient {String} [top, bottom, left, right]
+    */
+    M3.Axis.prototype.addAxes = function(canvas, x, y, axis, orient) {
+        var axes = canvas.append(&quot;g&quot;)
+            .attr(&quot;class&quot;, axis + &quot; axis &quot; + axis + orient)
+            .attr(&quot;transform&quot;, &quot;translate(&quot; + x + &quot;, &quot; + y + &quot;)&quot;)
+            .call((axis == &quot;x&quot;)?this.getXAxis(orient):this.getYAxis(orient));
+
+        return axes;
+    };
+
+    M3.Axis.prototype.addRect = function(elem, w, h) {
+        return elem.append(&quot;rect&quot;)
+            .attr(&quot;class&quot;, &quot;background&quot;)
+            .attr(&quot;width&quot;, w)
+            .attr(&quot;height&quot;, h);
+            //.attr(&quot;fill&quot;, &quot;#FF0000&quot;);
+            //.attr(&quot;fill-opacity&quot;, 0);
+    };
+
+    /**
+    Add a axis label
+
+    @method addLabel
+    @param axis {string} 
+    @param orient {string}
+    */
+    M3.Axis.prototype.addLabel = function(axis, orient) {
+        var scope = this;
+        var txt = scope.hasAxisOuterLabel(axis, orient);
+        var x = 0;
+        var y = 0;
+        var dy = &quot;&quot;;
+        var transform = &quot;&quot;;
+        if(txt !== &quot;&quot;) {
+            if(axis == &quot;y&quot;) {
+                y = (orient == &quot;left&quot;)? (scope.config.widthYLeft * -1) : scope.config.widthYRight;
+                x = d3.select(scope.config.container + &quot; .&quot; + axis + orient + &quot; rect&quot;).attr(&quot;height&quot;) / -2;
+                transform =  &quot;rotate(-90)&quot;;
+                dy = (orient === &quot;left&quot;) ?  &quot;-0.5em&quot; : &quot;1em&quot;;
+            } else {
+                x = d3.select(scope.config.container + &quot; .&quot; + axis + orient + &quot; rect&quot;).attr(&quot;width&quot;) / 2;
+                y = (orient==&quot;bottom&quot;)?scope.config.heightXBottom:(scope.config.heightXTop * -1);
+                dy = (orient==&quot;bottom&quot;)?&quot;1em&quot;:&quot;-0.5em&quot;;
+            }
+            d3.select(scope.config.container + &quot; .&quot; + axis + orient)
+                //.attr(&quot;transform&quot;, &quot;translate(&quot; + (start * -1).toString() + &quot;,&quot; + (this.config.canvasHeight/2) + &quot;) rotate(-90)&quot;)
+                .append(&quot;text&quot;)
+                .attr(&quot;y&quot;, y)
+                .attr(&quot;x&quot;, x)
+                .attr(&quot;transform&quot;, transform)
+                .attr(&quot;dy&quot;, dy)
+                .style(&quot;text-anchor&quot;, &quot;middle&quot;)
+                .attr(&quot;class&quot;, &quot;label&quot;)
+                .text(scope.config[&quot;axis&quot; + axis.toUpperCase() + &quot;Label&quot; + orient]);
+        }
+        else {
+            txt = scope.hasAxisInnerLabel(axis, orient);
+            if(txt !== &quot;&quot;) {
+                if(axis == &quot;y&quot;) {
+                    dy = (orient==&quot;left&quot;)?&quot;0.5em&quot;:&quot;-1em&quot;;
+                    y = 6;
+                    transform = &quot;rotate(-90)&quot;;
+                } else {
+                    dy = (orient == &quot;top&quot;) ? &quot;-0.75em&quot; : &quot;1.5em&quot;;
+                    //y = d3.select(scope.config.container + &quot; .&quot; + axis + orient + &quot; rect&quot;).attr(&quot;height&quot;) * 0.5;
+                    //transform = &quot;translate(0,&quot; + y + &quot;)&quot;;
+                    //y = 0;
+                    x = d3.select(scope.config.container + &quot; .&quot; + axis + orient + &quot; rect&quot;).attr(&quot;width&quot;);
+                    x = scope.config.canvasWidth;
+                    x -= (scope.hasYLeft)?scope.config.widthYLeft:0;
+                    x -= (scope.config.axisLabelYPosition == &quot;outer&quot; &amp;&amp; scope.hasYLeft)?scope.config.axisLabelWidth:0;
+                    x -= (scope.config.axisLabelYPosition == &quot;outer&quot; &amp;&amp; scope.hasYRight)?scope.config.axisLabelWidth:0;
+                }
+                d3.select(scope.config.container + &quot; .&quot; + axis + orient).append(&quot;text&quot;)
+                    .attr(&quot;transform&quot;, transform)
+                    .attr(&quot;y&quot;, y)
+                    .attr(&quot;dy&quot;, dy)
+                    .attr(&quot;x&quot;, x)
+                    .style(&quot;text-anchor&quot;, &quot;end&quot;)
+                    .text(scope.config[&quot;axis&quot; + axis.toUpperCase() + &quot;Label&quot; + orient]);
+            }
+        }
+    };
+
+
+    /**
+    Add Axis to canvas
+
+    @method addAllAxis
+    @param bottom {boolean}
+    @param left {boolean}
+    @param right {boolean}
+    @param top {boolean}
+    */
+    M3.Axis.prototype.addAllAxis = function(bottom, left, right, top) {
+        this.hasXBottom = (bottom !== undefined &amp;&amp; bottom === true);
+        this.hasYLeft = (left !== undefined &amp;&amp; left === true);
+        this.hasYRight = (right !== undefined &amp;&amp; right === true);
+        this.hasXTop = (top !== undefined &amp;&amp; top === true);
+
+        var elem = null;
+        var x = 0, y = 0;
+        var w = 0, h = 0;
+        
+
+        var label = &quot;&quot;;
+        if(this.hasXBottom) {
+            //this.addAxis(&quot;x&quot;, &quot;bottom&quot;); 
+
+            w = this.config.canvasWidth;
+            w -= (this.hasYLeft)?this.config.widthYLeft:0;
+            w -= (this.hasYRight)?this.config.widthYRight:0;
+            h = this.config.heightXBottom;
+
+            label = this.hasAxisOuterLabel(&quot;y&quot;, &quot;left&quot;);
+            x = ((this.hasYLeft)?this.config.widthYLeft:0) + ((label !== &quot;&quot; &amp;&amp; this.hasYLeft) ? this.config.axisLabelWidth : 0);
+            w -= (label !== &quot;&quot; ? this.config.axisLabelWidth : 0);
+
+            label = this.hasAxisOuterLabel(&quot;x&quot;, &quot;bottom&quot;);
+            y = this.config.canvasHeight - this.config.heightXBottom - (label !== &quot;&quot; ? this.config.axisLabelWidth : 0);
+
+            label = this.hasAxisOuterLabel(&quot;y&quot;, &quot;right&quot;);
+            w -= ((label !== &quot;&quot; &amp;&amp; this.hasYRight) ? this.config.axisLabelWidth : 0);
+
+            elem = this.addAxes(this.canvas, x, y, &quot;x&quot;, &quot;bottom&quot;);
+            this.addRect(elem, w, h);
+
+            this.addLabel(&quot;x&quot;, &quot;bottom&quot;);
+        }
+        if(this.hasXTop) {
+            //this.addAxis(&quot;x&quot;, &quot;top&quot;); 
+            w = this.config.canvasWidth;
+            w -= (this.hasYLeft)?this.config.widthYLeft:0;
+            w -= (this.hasYRight)?this.config.widthYRight:0;
+            h = this.config.heightXTop;
+
+            label = this.hasAxisOuterLabel(&quot;y&quot;, &quot;left&quot;);
+            x = ((this.hasYLeft)?this.config.widthYLeft:0) + ((label !== &quot;&quot; &amp;&amp; this.hasYLeft) ? this.config.axisLabelWidth : 0);
+            w -= ((label !== &quot;&quot; &amp;&amp; this.hasYLeft) ? this.config.axisLabelWidth : 0);
+
+            label = this.hasAxisOuterLabel(&quot;x&quot;, &quot;top&quot;);
+            y = this.config.heightXTop + (label !== &quot;&quot; ? this.config.axisLabelWidth : 0);
+
+            label = this.hasAxisOuterLabel(&quot;y&quot;, &quot;right&quot;);
+            w -= ((label !== &quot;&quot; &amp;&amp; this.hasYRight) ? this.config.axisLabelWidth : 0);
+
+            elem = this.addAxes(this.canvas, x, y, &quot;x&quot;, &quot;top&quot;);
+            this.addRect(elem, w, h).attr(&quot;transform&quot;, &quot;translate(0, &quot; + (this.config.heightXTop * -1) + &quot;)&quot;);
+
+            this.addLabel(&quot;x&quot;, &quot;top&quot;);
+        }
+        if(this.hasYLeft) {
+            //this.addAxis(&quot;y&quot;, &quot;left&quot;); 
+            w = this.config.widthYLeft;
+            h = this.config.canvasHeight;
+            h -= (this.hasXBottom)?this.config.heightXBottom:0;
+            h -= (this.hasXTop)?this.config.heightXTop:0;
+
+            label = this.hasAxisOuterLabel(&quot;y&quot;, &quot;left&quot;);
+            x = this.config.widthYLeft + (label !== &quot;&quot; ? this.config.axisLabelWidth : 0);
+
+            label = this.hasAxisOuterLabel(&quot;x&quot;, &quot;top&quot;);
+            y = ((this.hasXTop)?this.config.heightXTop:0) + ((label !== &quot;&quot; &amp;&amp; this.hasXTop) ? this.config.axisLabelWidth : 0);
+            h -= ((label !== &quot;&quot; &amp;&amp; this.hasXTop) ? this.config.axisLabelWidth : 0);
+
+            label = this.hasAxisOuterLabel(&quot;x&quot;, &quot;bottom&quot;);
+            h -= ((label !== &quot;&quot; &amp;&amp; this.hasXBottom) ? this.config.axisLabelWidth : 0);
+
+            elem = this.addAxes(this.canvas, x, y, &quot;y&quot;, &quot;left&quot;);
+            this.addRect(elem, w, h).attr(&quot;transform&quot;, &quot;translate(&quot; + (this.config.widthYLeft * -1) + &quot;, 0)&quot;);
+
+            this.addLabel(&quot;y&quot;, &quot;left&quot;);
+        }
+        if(this.hasYRight) {
+            //this.addAxis(&quot;y&quot;, &quot;right&quot;);
+            w = this.config.widthYRight;
+            h = this.config.canvasHeight;
+            h -= (this.hasXBottom)?this.config.heightXBottom:0;
+            h -= (this.hasXTop)?this.config.heightXTop:0;
+
+            label = this.hasAxisOuterLabel(&quot;y&quot;, &quot;right&quot;);
+            x = this.config.canvasWidth - this.config.widthYRight - (label !== &quot;&quot; ? this.config.axisLabelWidth : 0);
+
+            label = this.hasAxisOuterLabel(&quot;x&quot;, &quot;top&quot;);
+            y = ((this.hasXTop)?this.config.heightXTop:0) + ((label !== &quot;&quot; &amp;&amp; this.hasXTop) ? this.config.axisLabelWidth : 0);
+            h -= ((label !== &quot;&quot; &amp;&amp; this.hasXTop) ? this.config.axisLabelWidth : 0);
+
+            label = this.hasAxisOuterLabel(&quot;x&quot;, &quot;bottom&quot;);
+            h -= ((label !== &quot;&quot; &amp;&amp; this.hasXBottom) ? this.config.axisLabelWidth : 0);
+
+            elem = this.addAxes(this.canvas, x, y, &quot;y&quot;, &quot;right&quot;);
+
+            this.addRect(elem, w, h);
+
+            this.addLabel(&quot;y&quot;, &quot;right&quot;);
+        }
+    };
+})();
+    </pre>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/jquery/jquery-1.8.2.min.js"></script>
+<script src="../assets/vendor/bootstrap/js/bootstrap.js"></script>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script src="../assets/js/yuidoc-bootstrap.js"></script>
+<script>prettyPrint();</script>
+</body>
+</html>
