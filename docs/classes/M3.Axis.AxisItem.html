@@ -1,0 +1,1453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>M3.Axis.AxisItem - M3.Charting</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.7.0/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap-responsive.css">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+    <style>
+        .method .name code {
+            font-size: 14px;
+        }
+        .method .args code, .method .params .param-name {
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body class="yui3-skin-sam">
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <h1 class="brand" style="padding: 10px 16px 10px; height: 20px; line-height: 20px; margin-left: 0;">
+        
+	    <img alt="M3.Charting" src="../assets/css/logo.png" style="max-height: 65%;" title="M3.Charting">
+        
+            M3.Charting
+        </h1>
+	<div class="nav">
+            <li class="divider-vertical"></li>
+            <li>
+                <p class="navbar-text">
+                    API Docs for Version: <b>0.5.0</b>
+                </p>
+            </li>
+        </div>
+        <form class="navbar-form pull-right" style="line-height: 40px; height: 40px;">
+            <input style="margin-top: 0;" type="text" class="search-query" placeholder="Search for classes/modules..." data-obj='["classes/AreaChart", "classes/Axis", "classes/ColumnChart", "classes/DonutChart", "classes/LineChart", "classes/M3.AbstractCartesianChart", "classes/M3.AbstractChart", "classes/M3.AbstractPolarChart", "classes/M3.Axis.AxisItem", "classes/M3.Axis.AxisManager", "classes/M3.Axis.CategoryAxis", "classes/M3.Axis.CategoryPointsAxis", "classes/M3.Axis.LinealAxis", "classes/M3.Axis.Stacked100Axis", "classes/M3.Axis.StackedAxis", "classes/M3.Chart", "classes/M3.DataViz", "classes/M3.Series.AreaSerie", "classes/M3.Series.ChartSerie", "classes/M3.Series.ColumnSerie", "classes/M3.Series.GroupColumnSerie", "classes/M3.Series.StackedAreaSerie", "classes/M3.Series.StackedSerie", "classes/PieChart", "classes/Series", "classes/StackedAreaChart", "classes/StackedColumnChart", "modules/M3", "modules/M3.Axis", "modules/M3.Series"]'>
+        </form>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="span3">
+	    <div>
+    <h3>APIs</h3>
+    <div id="sidebar">
+        <ul id="main-nav" class="nav nav-tabs" style="margin-bottom:0;">
+            <li class="active"><a href="#classes" data-toggle="tab">Classes</a></li>
+            <li><a href="#modules" data-toggle="tab">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" placeholder="Type to filter APIs">
+        </div>
+
+        <div class="tab-content" style="border: 1px solid #DDD; border-top:0;">
+            <div class="tab-pane active" id="classes">
+                <ul id="api-classes" class="nav nav-list">
+                    
+                        <li><a href="../classes/AreaChart.html">AreaChart</a></li>
+                    
+                        <li><a href="../classes/Axis.html">Axis</a></li>
+                    
+                        <li><a href="../classes/ColumnChart.html">ColumnChart</a></li>
+                    
+                        <li><a href="../classes/DonutChart.html">DonutChart</a></li>
+                    
+                        <li><a href="../classes/LineChart.html">LineChart</a></li>
+                    
+                        <li><a href="../classes/M3.AbstractCartesianChart.html">M3.AbstractCartesianChart</a></li>
+                    
+                        <li><a href="../classes/M3.AbstractChart.html">M3.AbstractChart</a></li>
+                    
+                        <li><a href="../classes/M3.AbstractPolarChart.html">M3.AbstractPolarChart</a></li>
+                    
+                        <li><a href="../classes/M3.Axis.AxisItem.html">M3.Axis.AxisItem</a></li>
+                    
+                        <li><a href="../classes/M3.Axis.AxisManager.html">M3.Axis.AxisManager</a></li>
+                    
+                        <li><a href="../classes/M3.Axis.CategoryAxis.html">M3.Axis.CategoryAxis</a></li>
+                    
+                        <li><a href="../classes/M3.Axis.CategoryPointsAxis.html">M3.Axis.CategoryPointsAxis</a></li>
+                    
+                        <li><a href="../classes/M3.Axis.LinealAxis.html">M3.Axis.LinealAxis</a></li>
+                    
+                        <li><a href="../classes/M3.Axis.Stacked100Axis.html">M3.Axis.Stacked100Axis</a></li>
+                    
+                        <li><a href="../classes/M3.Axis.StackedAxis.html">M3.Axis.StackedAxis</a></li>
+                    
+                        <li><a href="../classes/M3.Chart.html">M3.Chart</a></li>
+                    
+                        <li><a href="../classes/M3.DataViz.html">M3.DataViz</a></li>
+                    
+                        <li><a href="../classes/M3.Series.AreaSerie.html">M3.Series.AreaSerie</a></li>
+                    
+                        <li><a href="../classes/M3.Series.ChartSerie.html">M3.Series.ChartSerie</a></li>
+                    
+                        <li><a href="../classes/M3.Series.ColumnSerie.html">M3.Series.ColumnSerie</a></li>
+                    
+                        <li><a href="../classes/M3.Series.GroupColumnSerie.html">M3.Series.GroupColumnSerie</a></li>
+                    
+                        <li><a href="../classes/M3.Series.StackedAreaSerie.html">M3.Series.StackedAreaSerie</a></li>
+                    
+                        <li><a href="../classes/M3.Series.StackedSerie.html">M3.Series.StackedSerie</a></li>
+                    
+                        <li><a href="../classes/PieChart.html">PieChart</a></li>
+                    
+                        <li><a href="../classes/Series.html">Series</a></li>
+                    
+                        <li><a href="../classes/StackedAreaChart.html">StackedAreaChart</a></li>
+                    
+                        <li><a href="../classes/StackedColumnChart.html">StackedColumnChart</a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="tab-pane" id="modules">
+                <ul id="api-modules" class="nav nav-list">
+                    
+                        <li><a href="../modules/M3.html">M3</a></li>
+                    
+                        <li><a href="../modules/M3.Axis.html">M3.Axis</a></li>
+                    
+                        <li><a href="../modules/M3.Series.html">M3.Series</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+        <div class="span9">
+                <form id="options-form" class="form-inline pull-right">
+        Show:
+        <label for="api-show-inherited" class="checkbox">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected" class="checkbox">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private" class="checkbox">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated" class="checkbox">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </form>
+
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <div class="page-header">
+    <h1>M3.Axis.AxisItem <small>Class</small></h1>
+</div>
+
+<div class="well well-small">
+    
+
+    
+
+    
+        <div class="foundat">
+            Defined in: <a href="../files/src_core_axis_AxisItem.js.html#l12"><code>src\core\axis\AxisItem.js:12</code></a>
+        </div>
+    
+
+    
+        
+            Module: <a href="../modules/M3.Axis.html">M3.Axis</a><br>
+            Parent Module: <a href="../modules/M3.html">M3</a>
+        
+    
+
+    
+</div>
+
+
+
+<div class="well well-small">
+    <p>Class to draw an Axis.</p>
+
+</div>
+
+
+    <div class="constructor">
+        <h2>Constructor</h2>
+        <div id="method_M3.Axis.AxisItem" class="method item">
+    <h3 class="name"><code>M3.Axis.AxisItem</code></h3>
+
+    
+        <span class="paren">()</span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/src_core_axis_AxisItem.js.html#l12"><code>src\core\axis\AxisItem.js:12</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        
+    </div>
+
+    
+
+    
+
+    
+        <div class="example">
+            <h4>Example:</h4>
+
+            <div class="example-content">
+                <pre class="code prettyprint"><code>var width = 200, height:100. xOffset = 10, yOffset = 10;
+var axis = new M3.AxisItem();
+axis.config(config).canvas(d3.select(".m3 .canvas")).data(datos).draw(width, height, xOffset, yOffset);</code></pre>
+
+            </div>
+        </div>
+    
+</div>
+
+    </div>
+
+
+<div>
+    <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#index">Index</a></li>
+
+        
+            <li><a data-toggle="tab" href="#methods">Methods</a></li>
+        
+        
+        
+        
+    </ul>
+
+    <div class="tab-content">
+        <div id="index" class="tab-pane active">
+            <h2 class="off-left">Item Index</h2>
+
+            
+                <div class="index-section methods">
+                    <h3>Methods</h3>
+
+                    <ul class="index-list methods">
+                        
+                            <li class="index-item method protected">
+                                <a href="#" data-tabid="#methods" data-anchor="#method_addLabel" data-tablink="addLabel">addLabel</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method protected">
+                                <a href="#" data-tabid="#methods" data-anchor="#method_addRect" data-tablink="addRect">addRect</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#" data-tabid="#methods" data-anchor="#method_canvas" data-tablink="canvas">canvas</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#" data-tabid="#methods" data-anchor="#method_config" data-tablink="config">config</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#" data-tabid="#methods" data-anchor="#method_data" data-tablink="data">data</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method private">
+                                <a href="#" data-tabid="#methods" data-anchor="#method_defaultConfig." data-tablink="defaultConfig.">defaultConfig.</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#" data-tabid="#methods" data-anchor="#method_draw" data-tablink="draw">draw</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method protected">
+                                <a href="#" data-tabid="#methods" data-anchor="#method_getAxis" data-tablink="getAxis">getAxis</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method protected">
+                                <a href="#" data-tabid="#methods" data-anchor="#method_getAxisScale" data-tablink="getAxisScale">getAxisScale</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method protected">
+                                <a href="#" data-tabid="#methods" data-anchor="#method_getScale" data-tablink="getScale">getScale</a>
+
+                                
+                                
+                            </li>
+                        
+                    </ul>
+                </div>
+            
+
+            
+
+            
+
+            
+        </div>
+
+        
+            <div id="methods" class="tab-pane">
+                <h2 class="off-left">Methods</h2>
+
+                
+                    <div id="method_addLabel" class="method item protected">
+    <h3 class="name"><code>addLabel</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>elem</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+
+    
+
+    
+        <span class="flag protected">protected</span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/src_core_axis_AxisItem.js.html#l198"><code>src\core\axis\AxisItem.js:198</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Add Axis label (title).</p>
+
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">elem</code>
+                        <span class="type">Object</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>reference to axis svg.</p>
+
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="method_addRect" class="method item protected">
+    <h3 class="name"><code>addRect</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>elem</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>w</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>h</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+
+    
+
+    
+        <span class="flag protected">protected</span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/src_core_axis_AxisItem.js.html#l180"><code>src\core\axis\AxisItem.js:180</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Add a rect as backgroud for the axis.</p>
+
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">elem</code>
+                        <span class="type">Object</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>reference to the axis avg.</p>
+
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">w</code>
+                        <span class="type">Number</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>With of the rectange background</p>
+
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">h</code>
+                        <span class="type">Number</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>Heigt of the rectange background</p>
+
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="method_canvas" class="method item">
+    <h3 class="name"><code>canvas</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>value</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+        <span class="returns-inline">
+            <span class="type"></span>
+        </span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <span class="flag chainable">chainable</span>
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/src_core_axis_AxisItem.js.html#l36"><code>src\core\axis\AxisItem.js:36</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Set the Canvas chart. Is the place where the axis will be drawn.</p>
+
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">value</code>
+                        <span class="type">Object</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>Reference to a svg element</p>
+
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                
+                    
+                    <p>AxisItem (this).</p>
+
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+                
+                    <div id="method_config" class="method item">
+    <h3 class="name"><code>config</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>value</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+        <span class="returns-inline">
+            <span class="type"></span>
+        </span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <span class="flag chainable">chainable</span>
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/src_core_axis_AxisItem.js.html#l70"><code>src\core\axis\AxisItem.js:70</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Set the configuration to the axis</p>
+<p><strong>Properties accepted:</strong></p>
+<table>
+    <thead>
+        <tr><th>Config property</th><th>Optional</th><th>Default</th><th>Description</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>pos</td><td>No</td><td></td><td>Posicion del eje [left, right, bottom, top].</td></tr>
+        <tr><td>label</td><td>Yes</td>Empty value<td></td><td>Nombre del eje.</td></tr>
+        <tr><td>labelPosition</td><td>Yes</td><td>none</td><td>[none, inner, outer] @default outer.</td></tr>
+        <tr><td>serie</td><td>Yes</td><td>value</td><td>Nombre de la propiedad que se mostrará sobre el eje. Puede ser un string o un array si varias series se plotean sobre el eje.</td></tr>
+        <tr><td>width</td><td>Yes</td><td>35 for y axis, 20 for x axis</td><td>Ancho del espacio del eje.</td></tr>
+        <tr><td>show</td><td>Yes</td><td>True</td><td>Indica si se visualiza o no el eje.</td></tr>
+        <tr><td>labelWidth</td><td>Yes</td><td>18</td><td>Ancho del espacio para el label del eje.</td></tr>
+        <tr><td>clazz</td><td>Yes</td><td>Axis.LinealAxis</td><td>Nombre de la clase del axis a crear.</td></tr>
+        <tr><td>axis</td><td>Yes</td><td>y when pos is left/right, x when pos is top/bottom</td><td>[x,y].</td></tr>
+        <tr><td>ticketSize</td><td>Yes</td><td>6 (d3 defaul)</td><td>The size of de line of each tick on the axis (default: 6).</td></tr>
+        <tr><td>tickPadding</td><td>Yes</td><td>3 (d3 default)</td><td>The space between the line tick with the label of tick.</td></tr>
+        <tr><td>tickFormat</td><td>Yes</td><td>"s" (d3 default format). For x axis don&#39;t trasnform the label</td><td>Format function for each tick label.
+        If chart config has <em>labelFormat</em> or/and <em>valueFormat</em> it&#39;s are the default values.<br><em>Example:</em>
+            function(d, indx) {
+                return d3.format("s");
+            }
+        </td></tr>
+    </tbdoy>
+</table>
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">value</code>
+                        <span class="type">Object</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                
+                    
+                    <p>Mixed object between value and default properties.</p>
+
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+                
+                    <div id="method_data" class="method item">
+    <h3 class="name"><code>data</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>value</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+        <span class="returns-inline">
+            <span class="type"></span>
+        </span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <span class="flag chainable">chainable</span>
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/src_core_axis_AxisItem.js.html#l109"><code>src\core\axis\AxisItem.js:109</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Set data values.</p>
+
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">value</code>
+                        <span class="type">Array</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                
+                    
+                    <p>AxisItem (this)</p>
+
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+                
+                    <div id="method_defaultConfig." class="method item private">
+    <h3 class="name"><code>defaultConfig.</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>conf</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+        <span class="returns-inline">
+            <span class="type"></span>
+        </span>
+    
+
+    
+
+    
+        <span class="flag private">private</span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/src_core_axis_AxisItem.js.html#l49"><code>src\core\axis\AxisItem.js:49</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Extend the settings passed as a parameter to add the missing properties.</p>
+<p>Default properties:
+{</p>
+<p>}</p>
+
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">conf</code>
+                        <span class="type">Object</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                
+                    
+                    <p>A mixin object between conf and default object properties.</p>
+
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+                
+                    <div id="method_draw" class="method item">
+    <h3 class="name"><code>draw</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>w</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>h</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>x</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>y</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <span class="flag chainable">chainable</span>
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/src_core_axis_AxisItem.js.html#l243"><code>src\core\axis\AxisItem.js:243</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Draw the axis into the canvas.</p>
+
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">w</code>
+                        <span class="type">Number</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>Wicth of the axis</p>
+
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">h</code>
+                        <span class="type">Number</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>Height of the axis</p>
+
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">x</code>
+                        <span class="type">Number</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>Offsset from the left border canvas</p>
+
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">y</code>
+                        <span class="type">Number</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>Offsset from the left border canvas</p>
+
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="method_getAxis" class="method item protected">
+    <h3 class="name"><code>getAxis</code></h3>
+
+    
+        <span class="paren">()</span>
+    
+
+    
+        <span class="returns-inline">
+            <span class="type"></span>
+        </span>
+    
+
+    
+
+    
+        <span class="flag protected">protected</span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/src_core_axis_AxisItem.js.html#l159"><code>src\core\axis\AxisItem.js:159</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Create the d3 axis.</p>
+
+    </div>
+
+    
+
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                
+                    
+                    <p>D3 axis reference.</p>
+
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+                
+                    <div id="method_getAxisScale" class="method item protected">
+    <h3 class="name"><code>getAxisScale</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>values</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+
+    
+
+    
+        <span class="flag protected">protected</span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/src_core_axis_AxisItem.js.html#l122"><code>src\core\axis\AxisItem.js:122</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Get the scale for the axis. 
+(Scale factory)</p>
+
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">values</code>
+                        <span class="type">Object</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="method_getScale" class="method item protected">
+    <h3 class="name"><code>getScale</code></h3>
+
+    
+        <span class="paren">()</span>
+    
+
+    
+
+    
+
+    
+        <span class="flag protected">protected</span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/src_core_axis_AxisItem.js.html#l140"><code>src\core\axis\AxisItem.js:140</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Set the scale for the axis</p>
+
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+            </div>
+        
+
+        
+
+        
+
+        
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/jquery/jquery-1.8.2.min.js"></script>
+<script src="../assets/vendor/bootstrap/js/bootstrap.js"></script>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script src="../assets/js/yuidoc-bootstrap.js"></script>
+<script>prettyPrint();</script>
+</body>
+</html>

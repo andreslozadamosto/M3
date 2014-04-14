@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>M3.DataViz - M3.Charting</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.7.0/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap-responsive.css">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+    <style>
+        .method .name code {
+            font-size: 14px;
+        }
+        .method .args code, .method .params .param-name {
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body class="yui3-skin-sam">
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <h1 class="brand" style="padding: 10px 16px 10px; height: 20px; line-height: 20px; margin-left: 0;">
+        
+	    <img alt="M3.Charting" src="../assets/css/logo.png" style="max-height: 65%;" title="M3.Charting">
+        
+            M3.Charting
+        </h1>
+	<div class="nav">
+            <li class="divider-vertical"></li>
+            <li>
+                <p class="navbar-text">
+                    API Docs for Version: <b>0.5.0</b>
+                </p>
+            </li>
+        </div>
+        <form class="navbar-form pull-right" style="line-height: 40px; height: 40px;">
+            <input style="margin-top: 0;" type="text" class="search-query" placeholder="Search for classes/modules..." data-obj='["classes/AreaChart", "classes/Axis", "classes/ColumnChart", "classes/DonutChart", "classes/LineChart", "classes/M3.AbstractCartesianChart", "classes/M3.AbstractChart", "classes/M3.AbstractPolarChart", "classes/M3.Axis.AxisItem", "classes/M3.Axis.AxisManager", "classes/M3.Axis.CategoryAxis", "classes/M3.Axis.CategoryPointsAxis", "classes/M3.Axis.LinealAxis", "classes/M3.Axis.Stacked100Axis", "classes/M3.Axis.StackedAxis", "classes/M3.Chart", "classes/M3.DataViz", "classes/M3.Series.AreaSerie", "classes/M3.Series.ChartSerie", "classes/M3.Series.ColumnSerie", "classes/M3.Series.GroupColumnSerie", "classes/M3.Series.StackedAreaSerie", "classes/M3.Series.StackedSerie", "classes/PieChart", "classes/Series", "classes/StackedAreaChart", "classes/StackedColumnChart", "modules/M3", "modules/M3.Axis", "modules/M3.Series"]'>
+        </form>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="span3">
+	    <div>
+    <h3>APIs</h3>
+    <div id="sidebar">
+        <ul id="main-nav" class="nav nav-tabs" style="margin-bottom:0;">
+            <li class="active"><a href="#classes" data-toggle="tab">Classes</a></li>
+            <li><a href="#modules" data-toggle="tab">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" placeholder="Type to filter APIs">
+        </div>
+
+        <div class="tab-content" style="border: 1px solid #DDD; border-top:0;">
+            <div class="tab-pane active" id="classes">
+                <ul id="api-classes" class="nav nav-list">
+                    
+                        <li><a href="../classes/AreaChart.html">AreaChart</a></li>
+                    
+                        <li><a href="../classes/Axis.html">Axis</a></li>
+                    
+                        <li><a href="../classes/ColumnChart.html">ColumnChart</a></li>
+                    
+                        <li><a href="../classes/DonutChart.html">DonutChart</a></li>
+                    
+                        <li><a href="../classes/LineChart.html">LineChart</a></li>
+                    
+                        <li><a href="../classes/M3.AbstractCartesianChart.html">M3.AbstractCartesianChart</a></li>
+                    
+                        <li><a href="../classes/M3.AbstractChart.html">M3.AbstractChart</a></li>
+                    
+                        <li><a href="../classes/M3.AbstractPolarChart.html">M3.AbstractPolarChart</a></li>
+                    
+                        <li><a href="../classes/M3.Axis.AxisItem.html">M3.Axis.AxisItem</a></li>
+                    
+                        <li><a href="../classes/M3.Axis.AxisManager.html">M3.Axis.AxisManager</a></li>
+                    
+                        <li><a href="../classes/M3.Axis.CategoryAxis.html">M3.Axis.CategoryAxis</a></li>
+                    
+                        <li><a href="../classes/M3.Axis.CategoryPointsAxis.html">M3.Axis.CategoryPointsAxis</a></li>
+                    
+                        <li><a href="../classes/M3.Axis.LinealAxis.html">M3.Axis.LinealAxis</a></li>
+                    
+                        <li><a href="../classes/M3.Axis.Stacked100Axis.html">M3.Axis.Stacked100Axis</a></li>
+                    
+                        <li><a href="../classes/M3.Axis.StackedAxis.html">M3.Axis.StackedAxis</a></li>
+                    
+                        <li><a href="../classes/M3.Chart.html">M3.Chart</a></li>
+                    
+                        <li><a href="../classes/M3.DataViz.html">M3.DataViz</a></li>
+                    
+                        <li><a href="../classes/M3.Series.AreaSerie.html">M3.Series.AreaSerie</a></li>
+                    
+                        <li><a href="../classes/M3.Series.ChartSerie.html">M3.Series.ChartSerie</a></li>
+                    
+                        <li><a href="../classes/M3.Series.ColumnSerie.html">M3.Series.ColumnSerie</a></li>
+                    
+                        <li><a href="../classes/M3.Series.GroupColumnSerie.html">M3.Series.GroupColumnSerie</a></li>
+                    
+                        <li><a href="../classes/M3.Series.StackedAreaSerie.html">M3.Series.StackedAreaSerie</a></li>
+                    
+                        <li><a href="../classes/M3.Series.StackedSerie.html">M3.Series.StackedSerie</a></li>
+                    
+                        <li><a href="../classes/PieChart.html">PieChart</a></li>
+                    
+                        <li><a href="../classes/Series.html">Series</a></li>
+                    
+                        <li><a href="../classes/StackedAreaChart.html">StackedAreaChart</a></li>
+                    
+                        <li><a href="../classes/StackedColumnChart.html">StackedColumnChart</a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="tab-pane" id="modules">
+                <ul id="api-modules" class="nav nav-list">
+                    
+                        <li><a href="../modules/M3.html">M3</a></li>
+                    
+                        <li><a href="../modules/M3.Axis.html">M3.Axis</a></li>
+                    
+                        <li><a href="../modules/M3.Series.html">M3.Series</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+        <div class="span9">
+                <form id="options-form" class="form-inline pull-right">
+        Show:
+        <label for="api-show-inherited" class="checkbox">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected" class="checkbox">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private" class="checkbox">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated" class="checkbox">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </form>
+
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <div class="page-header">
+    <h1>M3.DataViz <small>Class</small></h1>
+</div>
+
+<div class="well well-small">
+    
+
+    
+
+    
+        <div class="foundat">
+            Defined in: <a href="../files/src_core_DataViz.js.html#l3"><code>src\core\DataViz.js:3</code></a>
+        </div>
+    
+
+    
+        
+            Module: <a href="../modules/M3.html">M3</a>
+        
+    
+
+    
+</div>
+
+
+
+<div class="well well-small">
+    <p>Base class for datavisualizations</p>
+
+</div>
+
+
+    <div class="constructor">
+        <h2>Constructor</h2>
+        <div id="method_M3.DataViz" class="method item">
+    <h3 class="name"><code>M3.DataViz</code></h3>
+
+    
+        <span class="paren">()</span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/src_core_DataViz.js.html#l3"><code>src\core\DataViz.js:3</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+    </div>
+
+
+<div>
+    <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#index">Index</a></li>
+
+        
+            <li><a data-toggle="tab" href="#methods">Methods</a></li>
+        
+        
+            <li><a data-toggle="tab" href="#properties">Properties</a></li>
+        
+        
+        
+    </ul>
+
+    <div class="tab-content">
+        <div id="index" class="tab-pane active">
+            <h2 class="off-left">Item Index</h2>
+
+            
+                <div class="index-section methods">
+                    <h3>Methods</h3>
+
+                    <ul class="index-list methods">
+                        
+                            <li class="index-item method protected">
+                                <a href="#" data-tabid="#methods" data-anchor="#method_afterDraw" data-tablink="afterDraw">afterDraw</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method protected">
+                                <a href="#" data-tabid="#methods" data-anchor="#method_beforeDraw" data-tablink="beforeDraw">beforeDraw</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#" data-tabid="#methods" data-anchor="#method_data" data-tablink="data">data</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#" data-tabid="#methods" data-anchor="#method_draw" data-tablink="draw">draw</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method protected">
+                                <a href="#" data-tabid="#methods" data-anchor="#method_drawCanvas" data-tablink="drawCanvas">drawCanvas</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method protected">
+                                <a href="#" data-tabid="#methods" data-anchor="#method_drawContainer" data-tablink="drawContainer">drawContainer</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method protected">
+                                <a href="#" data-tabid="#methods" data-anchor="#method_drawInner" data-tablink="drawInner">drawInner</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#" data-tabid="#methods" data-anchor="#method_setConfig" data-tablink="setConfig">setConfig</a>
+
+                                
+                                
+                            </li>
+                        
+                    </ul>
+                </div>
+            
+
+            
+                <div class="index-section properties">
+                    <h3>Properties</h3>
+
+                    <ul class="index-list properties">
+                        
+                            <li class="index-item property">
+                                <a href="#" data-tabid="#properties" data-anchor="#property_config" data-tablink="config">config</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item property">
+                                <a href="#" data-tabid="#properties" data-anchor="#property_data" data-tablink="data">data</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item property">
+                                <a href="#" data-tabid="#properties" data-anchor="#property_data" data-tablink="data">data</a>
+
+                                
+                                
+                            </li>
+                        
+                    </ul>
+                </div>
+            
+
+            
+
+            
+        </div>
+
+        
+            <div id="methods" class="tab-pane">
+                <h2 class="off-left">Methods</h2>
+
+                
+                    <div id="method_afterDraw" class="method item protected">
+    <h3 class="name"><code>afterDraw</code></h3>
+
+    
+        <span class="paren">()</span>
+    
+
+    
+
+    
+
+    
+        <span class="flag protected">protected</span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/src_core_DataViz.js.html#l189"><code>src\core\DataViz.js:189</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Execute some code ufter to draw (a.k.a ufter to create all svg of datavisualization)</p>
+
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="method_beforeDraw" class="method item protected">
+    <h3 class="name"><code>beforeDraw</code></h3>
+
+    
+        <span class="paren">()</span>
+    
+
+    
+
+    
+
+    
+        <span class="flag protected">protected</span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/src_core_DataViz.js.html#l180"><code>src\core\DataViz.js:180</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Execute some code before to draw (a.k.a before to start to create the svg object)</p>
+
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="method_data" class="method item">
+    <h3 class="name"><code>data</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>data</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <span class="flag chainable">chainable</span>
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/src_core_DataViz.js.html#l89"><code>src\core\DataViz.js:89</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Set data to viz</p>
+
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">data</code>
+                        <span class="type">Array</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="method_draw" class="method item">
+    <h3 class="name"><code>draw</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code class="optional">[data]</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code class="optional">[config]</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <span class="flag chainable">chainable</span>
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/src_core_DataViz.js.html#l100"><code>src\core\DataViz.js:100</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Draw the datavisualization.</p>
+
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name optional">[data]</code>
+                        <span class="type">Array</span>
+                        <span class="flag optional" title="This parameter is optional.">optional</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name optional">[config]</code>
+                        <span class="type">Object</span>
+                        <span class="flag optional" title="This parameter is optional.">optional</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="method_drawCanvas" class="method item protected">
+    <h3 class="name"><code>drawCanvas</code></h3>
+
+    
+        <span class="paren">()</span>
+    
+
+    
+
+    
+
+    
+        <span class="flag protected">protected</span>
+    
+
+    
+
+    
+
+    
+        <span class="flag chainable">chainable</span>
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/src_core_DataViz.js.html#l159"><code>src\core\DataViz.js:159</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Draw the "g" element into "svg" (container) as canvas to draw the viz.</p>
+
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="method_drawContainer" class="method item protected">
+    <h3 class="name"><code>drawContainer</code></h3>
+
+    
+        <span class="paren">()</span>
+    
+
+    
+
+    
+
+    
+        <span class="flag protected">protected</span>
+    
+
+    
+
+    
+
+    
+        <span class="flag chainable">chainable</span>
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/src_core_DataViz.js.html#l137"><code>src\core\DataViz.js:137</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Add a viz container (a.k.a SVG element)</p>
+
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="method_drawInner" class="method item protected">
+    <h3 class="name"><code>drawInner</code></h3>
+
+    
+        <span class="paren">()</span>
+    
+
+    
+
+    
+
+    
+        <span class="flag protected">protected</span>
+    
+
+    
+
+    
+
+    
+        <span class="flag chainable">chainable</span>
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/src_core_DataViz.js.html#l126"><code>src\core\DataViz.js:126</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Draw the data</p>
+
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="method_setConfig" class="method item">
+    <h3 class="name"><code>setConfig</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>conf</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+        <span class="returns-inline">
+            <span class="type"></span>
+        </span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <span class="flag chainable">chainable</span>
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/src_core_DataViz.js.html#l29"><code>src\core\DataViz.js:29</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Set the config properties</p>
+<p>Default values</p>
+<table>
+    <thead>
+        <tr><th>Property</th><th>Default</th><th>Description</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>margin</td><td>{top: 5, bottom: 5, left: 5, right:5, all:NaN}</td><td></td></tr>
+        <tr><td>width</td><td>200</td><td></td></tr>
+        <tr><td>margin</td><td>100</td><td></td></tr>
+        <tr><td>container</td><td>#chartContainer</td><td></td></tr>
+        <tr><td>styles</td><td>{container:"m3" canvas:"canvas" }</td><td></td></tr>
+    </tbody>
+</table>
+
+<p>Other properties are calculated on runtime.</p>
+<p>If you set margin.all = 15, so margin.left, margin.right, margin.bottom and margin.top are setted to 15.</p>
+<p>With the properties width/height/margin are calculated canvasWidth and canvasHeight. The first is Widh - (margin.left + margin.right)
+and the second is the result of height - (margin.top - margin.bottom).</p>
+
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">conf</code>
+                        <span class="type">Object</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>object with properties</p>
+
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                
+                    
+                    <p>Instance reference</p>
+
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+                
+            </div>
+        
+
+        
+            <div id="properties" class="tab-pane">
+                <h2 class="off-left">Properties</h2>
+
+                
+                    <div id="property_config" class="property item">
+    <h3 class="name"><code>config</code></h3>
+    <span class="type">Unknown</span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/src_core_DataViz.js.html#l12"><code>src\core\DataViz.js:12</code></a>
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Config properties storage.</p>
+
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="property_data" class="property item">
+    <h3 class="name"><code>data</code></h3>
+    <span class="type">Unknown</span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/src_core_DataViz.js.html#l18"><code>src\core\DataViz.js:18</code></a>
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Data to represent on the datavisualization.</p>
+
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="property_data" class="property item">
+    <h3 class="name"><code>data</code></h3>
+    <span class="type">Unknown</span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/src_core_DataViz.js.html#l23"><code>src\core\DataViz.js:23</code></a>
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>List of behavirours</p>
+
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+            </div>
+        
+
+        
+
+        
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/jquery/jquery-1.8.2.min.js"></script>
+<script src="../assets/vendor/bootstrap/js/bootstrap.js"></script>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script src="../assets/js/yuidoc-bootstrap.js"></script>
+<script>prettyPrint();</script>
+</body>
+</html>

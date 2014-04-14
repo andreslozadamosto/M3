@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>src\core\AbstractCartesianChart.js - M3.Charting</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.7.0/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap-responsive.css">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+    <style>
+        .method .name code {
+            font-size: 14px;
+        }
+        .method .args code, .method .params .param-name {
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body class="yui3-skin-sam">
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <h1 class="brand" style="padding: 10px 16px 10px; height: 20px; line-height: 20px; margin-left: 0;">
+        
+	    <img alt="M3.Charting" src="../assets/css/logo.png" style="max-height: 65%;" title="M3.Charting">
+        
+            M3.Charting
+        </h1>
+	<div class="nav">
+            <li class="divider-vertical"></li>
+            <li>
+                <p class="navbar-text">
+                    API Docs for Version: <b>0.5.0</b>
+                </p>
+            </li>
+        </div>
+        <form class="navbar-form pull-right" style="line-height: 40px; height: 40px;">
+            <input style="margin-top: 0;" type="text" class="search-query" placeholder="Search for classes/modules..." data-obj='["classes/AreaChart", "classes/Axis", "classes/ColumnChart", "classes/DonutChart", "classes/LineChart", "classes/M3.AbstractCartesianChart", "classes/M3.AbstractChart", "classes/M3.AbstractPolarChart", "classes/M3.Axis.AxisItem", "classes/M3.Axis.AxisManager", "classes/M3.Axis.CategoryAxis", "classes/M3.Axis.CategoryPointsAxis", "classes/M3.Axis.LinealAxis", "classes/M3.Axis.Stacked100Axis", "classes/M3.Axis.StackedAxis", "classes/M3.Chart", "classes/M3.DataViz", "classes/M3.Series.AreaSerie", "classes/M3.Series.ChartSerie", "classes/M3.Series.ColumnSerie", "classes/M3.Series.GroupColumnSerie", "classes/M3.Series.StackedAreaSerie", "classes/M3.Series.StackedSerie", "classes/PieChart", "classes/Series", "classes/StackedAreaChart", "classes/StackedColumnChart", "modules/M3", "modules/M3.Axis", "modules/M3.Series"]'>
+        </form>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="span3">
+	    <div>
+    <h3>APIs</h3>
+    <div id="sidebar">
+        <ul id="main-nav" class="nav nav-tabs" style="margin-bottom:0;">
+            <li class="active"><a href="#classes" data-toggle="tab">Classes</a></li>
+            <li><a href="#modules" data-toggle="tab">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" placeholder="Type to filter APIs">
+        </div>
+
+        <div class="tab-content" style="border: 1px solid #DDD; border-top:0;">
+            <div class="tab-pane active" id="classes">
+                <ul id="api-classes" class="nav nav-list">
+                    
+                        <li><a href="../classes/AreaChart.html">AreaChart</a></li>
+                    
+                        <li><a href="../classes/Axis.html">Axis</a></li>
+                    
+                        <li><a href="../classes/ColumnChart.html">ColumnChart</a></li>
+                    
+                        <li><a href="../classes/DonutChart.html">DonutChart</a></li>
+                    
+                        <li><a href="../classes/LineChart.html">LineChart</a></li>
+                    
+                        <li><a href="../classes/M3.AbstractCartesianChart.html">M3.AbstractCartesianChart</a></li>
+                    
+                        <li><a href="../classes/M3.AbstractChart.html">M3.AbstractChart</a></li>
+                    
+                        <li><a href="../classes/M3.AbstractPolarChart.html">M3.AbstractPolarChart</a></li>
+                    
+                        <li><a href="../classes/M3.Axis.AxisItem.html">M3.Axis.AxisItem</a></li>
+                    
+                        <li><a href="../classes/M3.Axis.AxisManager.html">M3.Axis.AxisManager</a></li>
+                    
+                        <li><a href="../classes/M3.Axis.CategoryAxis.html">M3.Axis.CategoryAxis</a></li>
+                    
+                        <li><a href="../classes/M3.Axis.CategoryPointsAxis.html">M3.Axis.CategoryPointsAxis</a></li>
+                    
+                        <li><a href="../classes/M3.Axis.LinealAxis.html">M3.Axis.LinealAxis</a></li>
+                    
+                        <li><a href="../classes/M3.Axis.Stacked100Axis.html">M3.Axis.Stacked100Axis</a></li>
+                    
+                        <li><a href="../classes/M3.Axis.StackedAxis.html">M3.Axis.StackedAxis</a></li>
+                    
+                        <li><a href="../classes/M3.Chart.html">M3.Chart</a></li>
+                    
+                        <li><a href="../classes/M3.DataViz.html">M3.DataViz</a></li>
+                    
+                        <li><a href="../classes/M3.Series.AreaSerie.html">M3.Series.AreaSerie</a></li>
+                    
+                        <li><a href="../classes/M3.Series.ChartSerie.html">M3.Series.ChartSerie</a></li>
+                    
+                        <li><a href="../classes/M3.Series.ColumnSerie.html">M3.Series.ColumnSerie</a></li>
+                    
+                        <li><a href="../classes/M3.Series.GroupColumnSerie.html">M3.Series.GroupColumnSerie</a></li>
+                    
+                        <li><a href="../classes/M3.Series.StackedAreaSerie.html">M3.Series.StackedAreaSerie</a></li>
+                    
+                        <li><a href="../classes/M3.Series.StackedSerie.html">M3.Series.StackedSerie</a></li>
+                    
+                        <li><a href="../classes/PieChart.html">PieChart</a></li>
+                    
+                        <li><a href="../classes/Series.html">Series</a></li>
+                    
+                        <li><a href="../classes/StackedAreaChart.html">StackedAreaChart</a></li>
+                    
+                        <li><a href="../classes/StackedColumnChart.html">StackedColumnChart</a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="tab-pane" id="modules">
+                <ul id="api-modules" class="nav nav-list">
+                    
+                        <li><a href="../modules/M3.html">M3</a></li>
+                    
+                        <li><a href="../modules/M3.Axis.html">M3.Axis</a></li>
+                    
+                        <li><a href="../modules/M3.Series.html">M3.Series</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+        <div class="span9">
+                <form id="options-form" class="form-inline pull-right">
+        Show:
+        <label for="api-show-inherited" class="checkbox">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected" class="checkbox">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private" class="checkbox">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated" class="checkbox">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </form>
+
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <div class="page-header">
+    <h1>src\core\AbstractCartesianChart.js <small>File</small></h1>
+</div>
+
+<div class="file">
+    <pre class="prettyprint linenums">
+(function() {
+    &quot;use strict&quot;;
+    /**
+    Base class for Charts
+    
+    @class M3.AbstractCartesianChart
+    @constructor
+    @extends M3.AbstractChart
+    @module M3
+    */
+    M3.AbstractCartesianChart = M3.AbstractCartesianChart || M3CreateClass(M3.AbstractChart);
+    
+    /**
+    Reference to axis module.
+    See src/core/axis/Axis.js for more information.
+    
+    @property axis
+    */
+    M3.AbstractCartesianChart.prototype.axis = null;
+
+    /**
+    Add Axis to chart
+    */
+    M3.AbstractCartesianChart.prototype.addAxis = function(bottom, left, right, top) {
+        this.axis = new M3.Axis();
+        this.axis.config = this.config;
+        this.axis.data = this.data;
+        this.axis.canvas = d3.select(this.config.container + &quot; .&quot; + this.config.styles.canvas);
+        this.axis.addAllAxis(bottom, left, right, top);
+    };
+    
+    /**
+    Draw the data
+    
+    @method drawInner
+    @chainable
+    */
+    M3.AbstractCartesianChart.prototype.drawInner = function() {
+        this.addAxis(this.config.axis.bottom, this.config.axis.left, this.config.axis.right, this.config.axis.top);
+        this.drawChartArea();
+        return this;
+    }
+    
+    M3.AbstractCartesianChart.prototype.drawChartArea = function() {
+        var canvas = d3.select(this.config.container + &quot; .&quot; + this.config.styles.canvas); 
+        
+        var offsetX = 0;
+        offsetX += this.axis.hasYLeft?(this.config.widthYLeft + 1):0;
+        offsetX += (this.config.axisYLabelleft !== &quot;&quot; &amp;&amp; this.axis.hasYLeft &amp;&amp; this.config.axisLabelYPosition == &quot;outer&quot;)? this.config.axisLabelWidth:0;
+        var offsetY = 0;
+        offsetY += this.axis.hasXTop?this.config.heightXTop:0;
+        offsetY += (this.config.axisXLabeltop !== &quot;&quot; &amp;&amp; this.axis.hasXTop &amp;&amp; this.config.axisLabelXPosition == &quot;outer&quot;)? this.config.axisLabelWidth:0;
+        
+        var w = this.config.canvasWidth;
+        w -=  this.axis.hasYLeft?(this.config.widthYLeft+1):0;
+        w -= (this.config.axisYLabelleft !== &quot;&quot; &amp;&amp; this.axis.hasYLeft &amp;&amp; this.config.axisLabelYPosition == &quot;outer&quot;)? this.config.axisLabelWidth:0;
+        w -=  this.axis.hasYRight?(this.config.widthYRight+1):0;
+        w -= (this.config.axisYLabelright !== &quot;&quot; &amp;&amp; this.axis.hasYRight &amp;&amp; this.config.axisLabelYPosition == &quot;outer&quot;)? this.config.axisLabelWidth:0;
+        
+        var h = this.config.canvasHeight;
+        h -=  this.axis.hasXTop?this.config.heightXTop:0;
+        h -= (this.config.axisXLabeltop !== &quot;&quot; &amp;&amp; this.axis.hasXTop &amp;&amp; this.config.axisLabelXPosition == &quot;outer&quot;)? this.config.axisLabelWidth:0;
+        h -=  this.axis.hasXBottom?this.config.heightXBottom:0;
+        h -= (this.config.axisXLabelbottom !== &quot;&quot; &amp;&amp; this.axis.hasXBottom &amp;&amp; this.config.axisLabelXPosition == &quot;outer&quot;)? this.config.axisLabelWidth:0;
+        
+        canvas.append(&quot;g&quot;)
+            .attr(&quot;class&quot;, &quot;chartarea&quot;)
+            .attr(&quot;transform&quot;, &quot;translate(&quot; + offsetX + &quot;, &quot; + offsetY + &quot;)&quot;)
+            .append(&quot;rect&quot;)
+                .attr(&quot;width&quot;, w)
+                .attr(&quot;height&quot;, h)
+                .attr(&quot;class&quot;, &quot;background&quot;);
+                //.attr(&quot;fill&quot;, &quot;#FFFFFF&quot;);
+        
+        return this;
+    };
+   
+    /**
+    Set the config properties
+    The same that M3.DataViz plus
+    
+    Default values
+        { 
+            itemValue: &quot;value&quot;,
+            itemLabel: &quot;label,
+            axisYLabel: &quot;&quot;,
+            axisY2Label: &quot;&quot;,
+            axisXLabel: &quot;&quot;,
+            axisX2Label:&quot;&quot;,
+            axisYPadding:20,
+            yLabelFormat,
+            ticks:NaN
+        }
+            
+    @method setConfig
+    @chainable
+    @param conf {Object} object with properties
+    @return Instance reference
+    */
+    M3.AbstractCartesianChart.prototype.setConfig = function(conf) {
+        var defaultYLabelFormat = function (d) { return d3.format(&quot;s&quot;)(d); };
+        var defaults = {
+            //itemValue: &quot;value&quot;,
+            //itemLabel: &quot;label&quot;,
+            itemValueMin: &quot;valueMin&quot;,
+            axisYLabel: &quot;&quot;,
+            axisXLabel: &quot;&quot;,
+            axisYPadding: 20,
+            yLabelFormat: defaultYLabelFormat,
+            ticks:NaN,
+            series:null,
+            
+            heightXBottom:20,
+            heightXTop:20,
+            widthYLeft:35,
+            widthYRight:35,
+            itemValueleft:&quot;&quot;,itemValueright:&quot;&quot;,
+            itemLabeltop:&quot;&quot;,itemLabelbottom:&quot;&quot;,
+            axisYLabelleft:&quot;&quot;, axisYLabelright:&quot;&quot;,
+            axisXLabeltop:&quot;&quot;, axisXLabelbottom:&quot;&quot;,
+            axisLabelWidth: 16,
+            axisLabelYPosition: &quot;outer&quot;,
+            axisLabelXPosition: &quot;inner&quot;,
+            axis: { top:false, bottom:false, left:false, right: false }
+        };
+        var configs = M3.mixin(conf, defaults);
+        M3.AbstractChart.prototype.setConfig.call(this, configs);
+        
+        return this;
+    };
+    
+})();
+    </pre>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/jquery/jquery-1.8.2.min.js"></script>
+<script src="../assets/vendor/bootstrap/js/bootstrap.js"></script>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script src="../assets/js/yuidoc-bootstrap.js"></script>
+<script>prettyPrint();</script>
+</body>
+</html>
