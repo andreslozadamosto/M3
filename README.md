@@ -54,5 +54,12 @@ There are some builtin behaviours (and more to come):
     columnChart.behaviours = [new M3.behaviours.GridBackground()];
     columnChart.draw(data, M3.extend({}, config, {container:"#ex1"}));
 
+## Grunt task
+Generate api documentation
+    > grunt docu 
+Build (create min file)
+    > grunt deploy
+Test (run jasmine test)
+    > grunt jasmine
 ## Licence
 [BSD Licence](http://opensource.org/licenses/BSD-3-Clause "BSD Licence")
