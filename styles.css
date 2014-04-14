@@ -1,0 +1,124 @@
+
+
+/* GENERAL STYLES */
+* {
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 400;
+}
+
+html {
+    font-size:62.5%;
+}
+
+body {
+    font-size:10px;   
+    line-height:1.6;
+}
+
+body * {
+    font-size: 1.3rem;
+}
+a, a:hover, a:focus {
+    color: red;
+}
+
+/* SIDEBAR STYLES */
+.sidebar {
+    /*position: fixed;
+    float: right;*/
+}
+.sidebar ul li {
+    list-style-type: none;
+    text-align: right;
+}
+.sidebar nav {
+    margin-top: 2rem;
+}
+.sidebar header {
+    font-size: 1.8rem;
+    text-align: right;
+}
+.sidebar header h1 {
+    font-size: 4rem;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    
+}
+.sidebar header h3 {
+    font-size: 1.8rem;
+    margin-top: 0px;
+}
+
+
+/* CONTENT STYLES */
+.row {
+    padding-top: 30px;
+}
+
+.content {
+    border-left-color: #CCC;
+    border-left-style: dotted;
+    border-left-width: thin;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+section header {
+    font-size: 2.1rem;
+    font-weight: 600;
+}
+
+section h3 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-style: italic;
+}
+section div.features {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+section div.features ul li{ 
+    list-style-type: none;
+    
+}
+section div.features ul li:before {
+    content: "» ";
+    
+}
+section div a {
+    color: red;
+}
+
+/* FOOTER STYLES */
+footer {
+    background-color: #E9E9E9;/*#F9F9F9;*/
+    border-top: 1px solid #CCC;/*#E5E5E5;*/
+    color: #999999;
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+
+.beta {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    border: 0; 
+    transform:rotate(-90deg); 
+    -ms-transform:rotate(-90deg); 
+    -webkit-transform:rotate(-90deg);
+}
+
+.contributor_img {
+    width: 50px;
+    height: 50;
+    border-radius: 25px;
+}
+
+code {
+    padding-top: 0px !important;
+    padding-bottom: 0px;
+}

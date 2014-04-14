@@ -1,0 +1,340 @@
+/*
+*
+* Master Chart
+*
+*/
+.m3 {
+}
+
+.m3 .canvas {
+}
+.m3 .canvas rect.background {
+    fill:#FFFFFF;
+    fill-opacity:0;
+}
+.m3 .canvas .chartarea rect.background{
+    fill:#FFF000;
+    fill-opacity:0;
+}
+
+.m3 text {
+    font: 10px sans-serif;
+    color:#333;
+    fill:#333;
+}
+
+.m3 rect.background {
+    stroke: #000000;/* none */
+    stroke-width: 0.1;
+    fill:#EEEEEE;
+    
+    
+    stroke: none;
+    fill-opacity:0;
+}
+
+/* --------------------------------------------------------- */
+/* AXIS */
+.m3 .canvas .axis {
+}
+.m3 .canvas .axis rect.background {
+    fill:#FF0000;
+    fill-opacity:0;
+}
+.m3 .canvas .axis path, .m3 .axis line {
+    fill: none;
+    stroke: #333;
+    shape-rendering: crispEdges;
+}
+.m3 .canvas.axis .label {
+}
+.m3 .canvas .axis tick {
+}
+.m3 .canvas .x {
+}
+.m3 .canvas .x path {
+    display: none;
+}
+.m3 .canvas .xtop {
+}
+.m3 .canvas .xbottom {
+}
+.m3 .canvas .y {
+}
+.m3 .canvas .yleft {
+}
+.m3 .canvas .yright {
+}
+
+
+
+/* --------------------------------------------------------- */
+/* COLOR SERIES */
+/* http://www.colorhexa.com/7f97b7 -> shades and tints*/
+.m3 .s1 { fill:#1f77b4; } .m3 .s1:hover { fill:#114674; cursor: pointer; }
+.m3 .s2 { fill:#ff7f0e; } .m3 .s2:hover { fill:#FF4B08; cursor: pointer; } 
+.m3 .s3 { fill:#2ca02c; } .m3 .s3:hover { fill:#186318; cursor: pointer; }
+.m3 .s4 { fill:#D62728; } .m3 .s4:hover { fill:#961516; cursor: pointer; }
+.m3 .s5 { fill:#9467BD; } .m3 .s5:hover { fill:#5B3C7B; cursor: pointer; }
+.m3 .s6 { fill:#313140; } .m3 .s6:hover { fill:#54312A; cursor: pointer; }
+.m3 .s7 { fill:#E377C2; } .m3 .s7:hover { fill:#B1467F; cursor: pointer; }
+.m3 .s8 { fill:#7F7F7F; } .m3 .s8:hover { fill:#4B4B4B; cursor: pointer; }
+.m3 .s9 { fill:#BCBD22; } .m3 .s9:hover { fill:#7A7B13; cursor: pointer; }
+.m3 .s10 { fill:#17BECF; } .m3 .s10:hover { fill:#0D7C8C; cursor: pointer; }
+
+.m3 .sl1 { stroke:#1f77b4; stroke-width: 2px; fill: none; }
+.m3 .sl2 { stroke:#ff7f0e; stroke-width: 2px; fill: none; }
+.m3 .sl3 { stroke:#2ca02c; stroke-width: 2px; fill: none; }
+.m3 .sl4 { stroke:#D62728; stroke-width: 2px; fill: none; }
+.m3 .sl5 { stroke:#9467BD; stroke-width: 2px; fill: none; }
+.m3 .sl6 { stroke:#313140; stroke-width: 2px; fill: none; }
+.m3 .sl7 { stroke:#E377C2; stroke-width: 2px; fill: none; }
+.m3 .sl8 { stroke:#7F7F7F; stroke-width: 2px; fill: none; }
+.m3 .sl9 { stroke:#BCBD22; stroke-width: 2px; fill: none; }
+.m3 .sl10 { stroke:#17BECF; stroke-width: 2px; fill: none; }
+
+.m3 .data-point-s1 circle { fill: #FFF; stroke: #1f77b4; stroke-width: 2px; } .m3 .data-point-s1 circle:hover { stroke:#114674; cursor: pointer; }
+.m3 .data-point-s2 circle { fill: #FFF; stroke: #ff7f0e; stroke-width: 2px; } .m3 .data-point-s2 circle:hover { stroke:#FF4B08; cursor: pointer; }
+.m3 .data-point-s3 circle { fill: #FFF; stroke: #2ca02c; stroke-width: 2px; } .m3 .data-point-s3 circle:hover { stroke:#186318; cursor: pointer; }
+.m3 .data-point-s4 circle { fill: #FFF; stroke: #D62728; stroke-width: 2px; } .m3 .data-point-s4 circle:hover { stroke:#961516; cursor: pointer; }
+.m3 .data-point-s5 circle { fill: #FFF; stroke: #6683a9; stroke-width: 2px; } .m3 .data-point-s5 circle:hover { stroke:#5B3C7B; cursor: pointer; }
+.m3 .data-point-s6 circle { fill: #FFF; stroke: #313140; stroke-width: 2px; } .m3 .data-point-s6 circle:hover { stroke:#54312A; cursor: pointer; }
+.m3 .data-point-s7 circle { fill: #FFF; stroke: #E377C2; stroke-width: 2px; } .m3 .data-point-s7 circle:hover { stroke:#B1467F; cursor: pointer; }
+.m3 .data-point-s8 circle { fill: #FFF; stroke: #7F7F7F; stroke-width: 2px; } .m3 .data-point-s8 circle:hover { stroke:#4B4B4B; cursor: pointer; }
+.m3 .data-point-s9 circle { fill: #FFF; stroke: #BCBD22; stroke-width: 2px; } .m3 .data-point-s9 circle:hover { stroke:#7A7B13; cursor: pointer; }
+.m3 .data-point-s10 circle { fill: #FFF; stroke: #17BECF; stroke-width: 2px; } .m3 .data-point-s10 circle:hover { stroke:#0D7C8C; cursor: pointer; }
+
+/* --------------------------------------------------------- */
+/* CARTESIAN CHART */
+
+
+/* --------------------------------------------------------- */
+/* COLUMN CHART */
+.m3 .columnChart {
+}
+.m3 .columnChart .chartarea {
+}
+.m3 .columnChart .chartarea .column {
+}
+
+/* --------------------------------------------------------- */
+/* LINE CHART */
+.m3 .lineChart {
+}
+
+.m3 .lineChart .x path {
+    display: block;
+}
+
+/* --------------------------------------------------------- */
+/* POLAR CHART */
+
+/* --------------------------------------------------------- */
+/* PIE CHART */
+.m3 .pieChart {
+}
+
+.m3 .pieChart .chartarea {
+}
+
+.m3 .pieChart .chartarea .arc{
+}
+
+/* --------------------------------------------------------- */
+/* DONUT CHART */
+.m3 .donutChart {
+}
+
+/* --------------------------------------------------------- */
+/* ARC CHART */
+.m3 .arcChart {
+}
+
+/* --------------------------------------------------------- */
+/* SLICE CHART */
+.m3 .sliceChart {
+}
+
+/* --------------------------------------------------------- */
+/* AREA CHART */
+.m3 .areaChart {
+}
+.m3 .areaChart .x path {
+    display: block;
+}
+
+.m3 .areaChart .s1 { fill:#1f77b4; } .m3 .areaChart .s1:hover { fill:#1f77b4; cursor: auto; }
+.m3 .areaChart .s2 { fill:#ff7f0e; } .m3 .areaChart .s2:hover { fill:#ff7f0e; cursor: auto; } 
+.m3 .areaChart .s3 { fill:#2ca02c; } .m3 .areaChart.s3:hover { fill:#2ca02c; cursor: auto; }
+.m3 .areaChart .s4 { fill:#D62728; } .m3 .areaChart .s4:hover { fill:#D62728; cursor: auto; }
+.m3 .areaChart .s5 { fill:#9467BD; } .m3 .areaChart .s5:hover { fill:#9467BD; cursor: auto; }
+.m3 .areaChart .s6 { fill:#313140; } .m3 .areaChart .s6:hover { fill:#313140; cursor: auto; }
+.m3 .areaChart .s7 { fill:#E377C2; } .m3 .areaChart .s7:hover { fill:#E377C2; cursor: auto; }
+.m3 .areaChart .s8 { fill:#7F7F7F; } .m3 .areaChart .s8:hover { fill:#7F7F7F; cursor: auto; }
+.m3 .areaChart .s9 { fill:#BCBD22; } .m3 .areaChart .s9:hover { fill:#BCBD22; cursor: auto; }
+.m3 .areaChart .s10 { fill:#17BECF; } .m3 .areaChart .s10:hover { fill:#17BECF; cursor: auto; }
+
+/* --------------------------------------------------------- */
+/* AREA Stacked CHART */
+.m3 .stackedAreaChart {
+}
+.m3 .stackedAreaChart .x path {
+    display: block;
+}
+
+.m3 .stackedAreaChart .s1 { fill:#1f77b4; } .m3 .stackedAreaChart .s1:hover { fill:#1f77b4; cursor: auto; }
+.m3 .stackedAreaChart .s2 { fill:#ff7f0e; } .m3 .stackedAreaChart .s2:hover { fill:#ff7f0e; cursor: auto; } 
+.m3 .stackedAreaChart .s3 { fill:#2ca02c; } .m3 .stackedAreaChart.s3:hover { fill:#2ca02c; cursor: auto; }
+.m3 .stackedAreaChart .s4 { fill:#D62728; } .m3 .stackedAreaChart .s4:hover { fill:#D62728; cursor: auto; }
+.m3 .stackedAreaChart .s5 { fill:#9467BD; } .m3 .stackedAreaChart .s5:hover { fill:#9467BD; cursor: auto; }
+.m3 .stackedAreaChart .s6 { fill:#313140; } .m3 .stackedAreaChart .s6:hover { fill:#313140; cursor: auto; }
+.m3 .stackedAreaChart .s7 { fill:#E377C2; } .m3 .stackedAreaChart .s7:hover { fill:#E377C2; cursor: auto; }
+.m3 .stackedAreaChart .s8 { fill:#7F7F7F; } .m3 .stackedAreaChart .s8:hover { fill:#7F7F7F; cursor: auto; }
+.m3 .stackedAreaChart .s9 { fill:#BCBD22; } .m3 .stackedAreaChart .s9:hover { fill:#BCBD22; cursor: auto; }
+.m3 .stackedAreaChart .s10 { fill:#17BECF; } .m3 .stackedAreaChart .s10:hover { fill:#17BECF; cursor: auto; }
+
+
+/* --------------------------------------------------------- */
+/* ARC CHART */
+.m3 .arcChart .chartarea path.brackground{
+    fill: white;
+}
+
+/* --------------------------------------------------------- */
+/* SLICE CHART */
+.m3 .sliceChart .chartarea path.brackground{
+    fill: white;
+}
+
+/* --------------------------------------------------------- */
+/* KPICOMPLETE CHART */
+.m3 .kpicompleteChart .chartarea path.brackground{
+    fill: #DDD;
+}
+
+.m3 .kpicompleteChart .txtKPI {
+    font-family: Verdana;
+    font-size  : 20px;
+    fill       : grey;
+    /*text-anchor: middle;*/
+}
+.m3 .kpicompleteChart .txtKPI_porc {
+    font-family: Verdana;
+    font-size  : 14px;
+    fill       : grey;
+    /*text-anchor: middle;*/
+}
+
+.m3 .kpicompleteChart .acomplishment_background {
+    fill: #ddd;
+}
+
+.m3 .kpicompleteChart .acomplishment_ok {
+    fill: #2ca02c;
+}
+.m3 .kpicompleteChart .acomplishment_ok:hover {
+    fill: #186318;
+    cursor: pointer;
+}
+
+.m3 .kpicompleteChart .acomplishment_bad {
+    fill: #D62728;
+}
+.m3 .kpicompleteChart .acomplishment_bad:hover {
+    fill: #961516;
+    cursor: pointer;
+}
+
+.m3 .kpicompleteChart .acomplishment_zero {
+    fill: grey;
+}
+
+
+.m3 .kpicompleteChart .title {
+    font-family: Verdana;
+    font-size: 24px;
+    fill: grey;
+}
+
+.m3 .kpicompleteChart .obj_title {
+    font-family: Verdana;
+    font-size: 10px;
+    fill: grey;
+}
+
+.m3 .kpicompleteChart .obj_value {
+    font-family: Verdana;
+    font-size: 10px;
+    fill: blue;
+}
+
+.m3 .kpicompleteChart .real_title {
+    font-family: Verdana;
+    font-size: 10px;
+    fill: grey;
+}
+
+.m3 .kpicompleteChart .real_value {
+    font-family: Verdana;
+    font-size: 10px;
+    fill: blue;
+}
+
+
+/* ------------------------------------------------------------------------------ */
+/* tooltip */
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  pointer-events: none;
+}
+
+/* Northward tooltips */
+.d3-tip.n:after {
+  content: "\25BC";
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+  text-align: center;
+}
+
+/* Eastward tooltips */
+.d3-tip.e:after {
+  content: "\25C0";
+  margin: -4px 0 0 0;
+  top: 50%;
+  left: -8px;
+}
+
+/* Southward tooltips */
+.d3-tip.s:after {
+  content: "\25B2";
+  margin: 0 0 1px 0;
+  top: -8px;
+  left: 0;
+  text-align: center;
+}
+
+/* Westward tooltips */
+.d3-tip.w:after {
+  content: "\25B6";
+  margin: -4px 0 0 -1px;
+  top: 50%;
+  left: 100%;
+}
