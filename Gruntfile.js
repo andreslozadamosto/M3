@@ -2,12 +2,18 @@ module.exports = function(grunt) {
     // Project configuration.
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
-        
+
         jasmine: {
             src: [
+                'src/M3.js',
+                //utils
+                'src/utils/*'
             ],
             options: {
-                specs: ['tests/core/DataVizSpec.js'],
+                specs: [
+                    'tests/M3Spec.js',
+                    'tests/utils/*'
+                ],
                 helpers: ['vendor/jasmine-query-master/lib/jasmine-jquery.js'],
                 vendor: [
                     "vendor/d3/d3.min.js",
@@ -15,17 +21,17 @@ module.exports = function(grunt) {
                 ]
             }
         },
-        
+
         jshint: {
             all: ['<%= jasmine.src %>', 'tests/**/*.js'],
-            options: require( "./jshint.json" ).options
+            options: require("./jshint.json").options
         },
-        
+
         watch: {
-            files:['<%= jshint.all %>'],
+            files: ['<%= jshint.all %>'],
             tasks: ['jshint']
         },
-        
+
         yuidoc: {
             compile: {
                 name: '<%= pkg.name %>',
@@ -33,9 +39,9 @@ module.exports = function(grunt) {
                 version: '<%= pkg.version %>',
                 options: {
                     paths: 'src/',
-                    
+
                     themedir: 'vendor/docuthemes/bootstrap/',
-                    helpers : [ 'vendor/docuthemes/bootstrap//helpers/helpers.js' ],
+                    helpers: ['vendor/docuthemes/bootstrap//helpers/helpers.js'],
 
                     outdir: 'docs/'
                 }
@@ -45,7 +51,7 @@ module.exports = function(grunt) {
             concat: {
                 options: {
                     beautify: true,
-                    compress: false
+                    compress: true
                 },
                 files: {
                     'lib/m3.js': ['<%= jasmine.src %>']
@@ -53,23 +59,23 @@ module.exports = function(grunt) {
             },
             min: {
                 options: {
-                    sourceMap:true
+                    sourceMap: true
                 },
                 files: {
                     'lib/m3.min.js': ['<%= jasmine.src %>']
                 }
             }
         }
-        
+
     });
-    
+
     // Load the tasks
     grunt.loadNpmTasks('grunt-contrib-jasmine');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-yuidoc');
     grunt.loadNpmTasks('grunt-contrib-uglify');
-    
+
     grunt.registerTask('docu', ['yuidoc']);
     grunt.registerTask('deploy', ['uglify:concat', 'uglify:min']);
 }
