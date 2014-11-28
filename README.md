@@ -1,3 +1,6 @@
+If you want try this library please use the tag version because the master is in active development on new behaviours and a complete refactoring. Thanks!
+
+
 # M3
 [Oficial website](http://alfathenus.github.io/M3/ "M3 datavisualization")
 
