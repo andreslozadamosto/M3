@@ -1,0 +1,14 @@
+{
+  "global": {
+    "files": [
+      {
+        "expand": true,
+        "cwd": "src/",
+        "src": [
+          "**"
+        ],
+        "dest": "bin/global"
+      }
+    ]
+  }
+}

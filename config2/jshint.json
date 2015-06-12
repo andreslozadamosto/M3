@@ -1,0 +1,43 @@
+{
+  "all": [
+    "<%= jasmine.src %>",
+    "tests/**/*.js"
+  ],
+  "options": {
+    "bitwise": true,
+    "camelcase": true,
+    "curly": true,
+    "eqeqeq": false,
+    "es3": false,
+    "forin": false,
+    "freeze": true,
+    "immed": true,
+    "indent": false,
+    "latedef": true,
+    "newcap": false,
+    "noarg": true,
+    "noempty": true,
+    "nonbsp": true,
+    "nonew": true,
+    "plusplus": false,
+    "quotmark": true,
+    "undef": false,
+    "unused": true,
+    "strict": true,
+    "trailing": true,
+    "maxparams": 10,
+    "maxdepth": 5,
+    "maxstatements": 400,
+    "asi": false,
+    "smarttabs": false,
+    "globals": {
+      "d3": true,
+      "BarChart": true,
+      "M3": true,
+      "M3Class": true,
+      "M3CreateClass": true,
+      "M3Exted": true,
+      "M3Mixin": true
+    }
+  }
+}

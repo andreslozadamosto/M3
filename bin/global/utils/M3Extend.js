@@ -2,7 +2,7 @@
     M3.Utils.extend = M3.Utils.extend ||
     /**
      Helper to extends two or more objects like JQuery extend.
-     Extends objects recrusivilly.
+     
      */
     function() {
         "use strict";
@@ -34,7 +34,7 @@
                 if (arguments[i] !== undefined && arguments[i] !== null) {
                     for (elem in arguments[i]) {
                         if (typeof(arguments[i][elem]) == "object" && !(arguments[i][elem] instanceof Number) && !(arguments[i][elem] instanceof Date) && !(arguments[i][elem] instanceof String) && !(arguments[i][elem] instanceof Array) && ret[elem] !== undefined) {
-                            ret[elem] = M3.Utils.extend(ret[elem], arguments[i][elem]);
+                            ret[elem] = utils.extend(ret[elem], arguments[i][elem]);
                         } else {
                             ret[elem] = arguments[i][elem];
                         }

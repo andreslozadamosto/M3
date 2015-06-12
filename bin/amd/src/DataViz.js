@@ -1,7 +1,7 @@
 (function(m3) {
 
     m3.DataViz = m3.DataViz ||
-        function(m3) {
+        function() {
             /**
             Base class for datavisualizations
 
@@ -18,25 +18,25 @@
             Config properties storage.
             @property config
             */
-            clazz.prototype.config = null;
+            M3.DataViz.prototype.config = null;
 
             /**
             Data to render.
             @property data
             */
-            clazz.prototype.data = null;
+            M3.DataViz.prototype.data = null;
 
             /**
             Text to show when there is no data
             @property noDataText
             */
-            clazz.prototype.noDataText = "There is no data to display";
+            M3.DataViz.prototype.noDataText = "There is no data to display";
 
             /**
             List of behavirours.
             @property behaviours
             */
-            clazz.prototype.behaviours = null;
+            M3.DataViz.prototype.behaviours = null;
 
             /**
             Set the config properties
@@ -75,7 +75,7 @@
             @param conf {Object} object with properties
             @return Instance reference
             */
-            clazz.prototype.setConfig = function(conf) {
+            M3.DataViz.prototype.setConfig = function(conf) {
                 var defaults = {
                     margin: {
                         top: 5,
@@ -96,17 +96,17 @@
                 var ret = {};
                 //if there is a previous config
                 if (this.config && conf) {
-                    ret = m3.Utils.extend(this.config, conf)
+                    ret = M3.extend(this.config, conf)
                 } else {
-                    ret = m3.Utils.extend(defaults, (conf) ? conf : {});
+                    ret = M3.extend(defaults, (conf) ? conf : {});
                 }
 
-                if (!+ret.width || +ret.width < m3.DataViz.MIN_WIDTH_SIZE) {
-                    ret.width = m3.Utils.getWidthOfDiv(ret.container);
-                    if (!+ret.width || +ret.width < m3.DataViz.MIN_WIDTH_SIZE) ret.width = M3.DataViz.MIN_WIDTH_SIZE;
+                if (!+ret.width || +ret.width < M3.DataViz.MIN_WIDTH_SIZE) {
+                    ret.width = M3.Utils.getWidthOfDiv(ret.container);
+                    if (!+ret.width || +ret.width < M3.DataViz.MIN_WIDTH_SIZE) ret.width = M3.DataViz.MIN_WIDTH_SIZE;
                 }
-                if (!+ret.height || +ret.height < m3.DataViz.MIN_HEIGHT_SIZE) {
-                    ret["height"] = m3.Utils.getHeightOfDiv(ret.container);
+                if (!+ret.height || +ret.height < M3.DataViz.MIN_HEIGHT_SIZE) {
+                    ret["height"] = M3.Utils.getHeightOfDiv(ret.container);
                     if (!+ret.height || +ret.height < M3.DataViz.MIN_HEIGHT_SIZE) ret.height = M3.DataViz.MIN_HEIGHT_SIZE;
                 }
 
@@ -130,11 +130,10 @@
             @chainable
             @param data {Array}
             */
-            clazz.prototype.setData = function(value) {
+            M3.DataViz.prototype.setData = function(value) {
                 this.data = value;
                 return this;
             };
-        
             return clazz;
-    }(m3);
+    }();
 }(M3));

@@ -1,0 +1,23 @@
+{
+  "concat": {
+    "options": {
+      "beautify": true,
+      "compress": true
+    },
+    "files": {
+      "lib/m3.js": [
+        "<%= jasmine.src %>"
+      ]
+    }
+  },
+  "min": {
+    "options": {
+      "sourceMap": true
+    },
+    "files": {
+      "lib/m3.min.js": [
+        "<%= jasmine.src %>"
+      ]
+    }
+  }
+}
