@@ -2,6 +2,8 @@ If you want try this library please use the tag version because the master is in
 
 
 # M3
+
+[![Join the chat at https://gitter.im/alfathenus/M3](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/alfathenus/M3?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [Oficial website](http://alfathenus.github.io/M3/ "M3 datavisualization")
 
 
