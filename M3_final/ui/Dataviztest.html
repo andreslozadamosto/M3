@@ -1,0 +1,26 @@
+<html>
+<head><title>
+    Dataviz example 1</title>
+
+    <link rel="stylesheet" href="../themes/dark/darkTheme.css">
+
+	<script src="d3.min.js" charset="utf-8"></script>
+
+	<script src="../src/M3.js"> </script>
+	<script src="../src/utils/Extend.js"> </script>
+	<script src="../src/utils/commons.js"> </script>
+	<script src="../src/Core/ClassFactory.js"> </script>
+	<script src="../src/Core/Dataviz.js"> </script>
+</head>
+
+<body>
+	<div id="M3Container">
+	</div>
+
+	<script  type="text/javascript" charset="utf-8">
+	var dataviz = new M3.Core.Dataviz();
+	dataviz.conf({width:400, height:200}).draw();	
+	</script>
+</body>
+
+</html>

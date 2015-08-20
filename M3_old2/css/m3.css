@@ -1,0 +1,87 @@
+/*
+*
+* Master Chart
+*
+*/
+.m3 {
+}
+
+/**
+*
+* Inner Chart
+*
+*/
+.m3 .m3_inner {
+}
+
+
+
+.m3 .arc path {
+  stroke: #fff;
+}
+
+.m3 .button:hover {
+    cursor: pointer;
+}
+
+/**
+*
+* KPI Component
+*
+*/
+.m3 .m3_kpi .txtKPI {
+    font-family: Verdana;
+    font-size  : 20px;
+    fill       : grey;
+    text-anchor: middle;
+}
+
+.m3 .m3_kpi .acomplishment_background {
+    fill: #ddd;
+}
+
+.m3 .m3_kpi .acomplishment_ok {
+    fill: green;
+}
+
+.m3 .m3_kpi .acomplishment_bad {
+    fill: red;
+}
+.m3 .m3_kpi .acomplishment_bad:hover {
+    fill: black;
+}
+
+.m3 .m3_kpi .acomplishment_zero {
+    fill: grey;
+}
+
+
+.m3 .m3_kpicomplete .title {
+    font-family: Verdana;
+    font-size: 24px;
+    fill: grey;
+}
+
+.m3 .m3_kpicomplete .obj_title {
+    font-family: Verdana;
+    font-size: 10px;
+    fill: grey;
+}
+
+.m3 .m3_kpicomplete .obj_value {
+    font-family: Verdana;
+    font-size: 10px;
+    fill: blue;
+}
+
+.m3 .m3_kpicomplete .real_title {
+    font-family: Verdana;
+    font-size: 10px;
+    fill: grey;
+}
+
+.m3 .m3_kpicomplete .real_value {
+    font-family: Verdana;
+    font-size: 10px;
+    fill: blue;
+}

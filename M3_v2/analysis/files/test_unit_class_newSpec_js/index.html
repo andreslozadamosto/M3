@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Plato - test/unit/class/newSpec.js</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <link href="../../assets/css/vendor/morris.css" rel="stylesheet">
+  <link href="../../assets/css/vendor/bootstrap.css" rel="stylesheet">
+  <link href="../../assets/css/vendor/font-awesome.css" rel="stylesheet">
+  <link href="../../assets/css/vendor/codemirror.css" rel="stylesheet">
+  <link href="../../assets/css/plato.css" rel="stylesheet">
+  <link href="../../assets/css/plato-file.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="navbar navbar-fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="http://github.com/es-analysis/plato">Plato on Github</a>
+    <ul class="nav navbar-nav">
+      <li>
+        <a href="../../index.html">Report Home</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="jumbotron">
+  <div class="container">
+    <h1>test/unit/class/newSpec.js</h1>
+  </div>
+</div>
+
+<div class="container aggregate-stats">
+  <div class="row">
+    <div class="col-md-6">
+      <h2 class="header">Maintainability <a href="http://blogs.msdn.com/b/codeanalysis/archive/2007/11/20/maintainability-index-range-and-meaning.aspx"><i class="icon icon-info-sign" rel="popover" data-placement="top" data-trigger="hover" data-content="A value between 0 and 100 that represents the relative ease of maintaining the code. A high value means better maintainability." data-original-title="Maintainability Index"  data-container="body"></i></a></h2>
+      <p class="stat">76.60</p>
+    </div>
+    <div class="col-md-6">
+      <h2 class="header">Lines of code <i class="icon icon-info-sign" rel="popover" data-placement="top" data-trigger="hover" data-content="Source Lines of Code / Logical Lines of Code" data-original-title="SLOC/LSLOC" data-container="body"></i></h2>
+      <p class="stat">130</p>
+    </div>
+  </div>
+  <div class="row historical">
+    <div class="col-md-6">
+      <p id="chart_historical_maint" class="chart"></p>
+    </div>
+    <div class="col-md-6">
+      <p id="chart_historical_sloc" class="chart"></p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <h2 class="header">Difficulty  <a href="http://en.wikipedia.org/wiki/Halstead_complexity_measures"><i class="icon icon-info-sign" rel="popover" data-placement="top" data-trigger="hover" data-content="The difficulty measure is related to the difficulty of the program to write or understand." data-original-title="Difficulty" data-container="body"></i></a></h2>
+      <p class="stat">31.65</p>
+    </div>
+    <div class="col-md-6">
+      <h2 class="header">Estimated Errors  <a href="http://en.wikipedia.org/wiki/Halstead_complexity_measures"><i class="icon icon-info-sign" rel="popover" data-placement="top" data-trigger="hover" data-content="Halstead's delivered bugs is an estimate for the number of errors in the implementation." data-original-title="Delivered Bugs" data-container="body"></i></a></h2>
+      <p class="stat">1.29</p>
+    </div>
+  </div>
+</div>
+
+<div class="container charts">
+  <div class="row">
+    <h2 class="header">Function weight</h2>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <h3 class="chart-header">By Complexity <a href="http://en.wikipedia.org/wiki/Cyclomatic_complexity"><i class="icon icon-info-sign" rel="popover" data-placement="top" data-trigger="hover" data-content="This metric counts the number of distinct paths through a block of code. Lower values are better." data-original-title="Cyclomatic Complexity" data-container="body"></i></a></h3>
+      <div id="fn-by-complexity" class="stat"></div>
+    </div>
+    <div class="col-md-6">
+      <h3 class="chart-header">By SLOC  <i class="icon icon-info-sign" rel="popover" data-placement="top" data-trigger="hover" data-content="Source Lines of Code / Logical Lines of Code" data-original-title="SLOC/LSLOC" data-container="body"></i></h3>
+      <div id="fn-by-sloc" class="stat"></div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <textarea id="file-source" class="col-md-12">describe(&quot;M3.Class.New Object test&quot;, function() {
+    &quot;use strict&quot;;
+    
+    var constructors = {
+        constuctor1: function () {
+            this.foo = function(){
+                return &quot;This is foo&quot;;
+            };
+        },
+        constuctor2: function () {
+            this.foo2 = function(){
+                return &quot;This is foo2&quot;;
+            };
+        },
+        constuctor3: function () {
+            var ff = this.foo2;
+            this.foo2 = function(){
+                return ff() + &quot; from constructor3&quot;;
+            };
+        },
+        constuctor4: function () {
+            var f = this.foo;
+            this.foo = function(){
+                return &quot;This is foo from constructor4&quot;;
+            };
+            this.foo3 = function() {
+                return f();
+            };
+            
+            var ff2 = this.foo2;
+            this.foo2 = function(){
+                return ff2() + &quot; from constructor4&quot;;
+            };
+        }
+    };
+
+    it(&quot;M3.Class.New reference have to exist&quot;, function() {
+        expect(M3.Class.New).toBeDefined();
+        expect(M3.Class.New).not.toBeNull();
+    });
+    
+    describe(&quot;Create a new class&quot;, function() {
+        it(&quot;Crate a anonimous class&quot;, function() {
+            var FooClass = M3.Class.New();
+            var foo = null;
+            
+            expect(function() { foo = new FooClass(); }).not.toThrow();
+            expect(foo instanceof Object).toBeTruthy();
+            expect(foo instanceof FooClass).toBeTruthy();
+        });
+        
+        it(&quot;Crate class with Name&quot;, function() {
+            var FooClass = M3.Class.New(&quot;MyClass&quot;);
+            var foo = null;
+            
+            expect(function() { foo = new FooClass(); }).not.toThrow();
+            expect(foo instanceof Object).toBeTruthy();
+            expect(foo instanceof FooClass).toBeTruthy();
+        });
+        
+        it(&quot;Crate class with Name and constructor&quot;, function() {
+            var FooClass = M3.Class.New(&quot;MyClass&quot;, constructors.constuctor1);
+            var foo = null;
+            
+            expect(function() { foo = new FooClass(); }).not.toThrow();
+            expect(foo instanceof Object).toBeTruthy();
+            expect(foo instanceof FooClass).toBeTruthy();
+            expect(foo.foo).toBeDefined();
+        });
+        
+        it(&quot;Crate class with Name, constructor and inherits&quot;, function() {
+            var FooClass1 = M3.Class.New(&quot;MyClass&quot;, constructors.constuctor1);
+            var FooClass2 = M3.Class.New(&quot;Foo2&quot;, constructors.constuctor2, FooClass1);
+            
+            var foo = null;
+            
+            expect(function() { foo = new FooClass2(); }).not.toThrow();
+            expect(foo instanceof Object).toBeTruthy();
+            expect(foo instanceof FooClass1).toBeTruthy();
+            expect(foo instanceof FooClass2).toBeTruthy();
+            expect(foo.foo).toBeDefined();
+            expect(foo.foo2).toBeDefined();
+        });
+    });
+    
+    describe(&quot;Check proctected methods override&quot;, function(){
+        
+        it(&quot;Create a basic class&quot;, function(){
+            var FooClass = M3.Class.New(&quot;Foo&quot;, constructors.constuctor1);
+            
+            var foo = new FooClass();
+            
+            expect(foo.foo()).toEqual(&quot;This is foo&quot;);
+        });
+        
+        it(&quot;Create a class with one level of inherit&quot;, function() {
+            var FooClass1 = M3.Class.New(&quot;Foo&quot;, constructors.constuctor1);
+            var FooClass2 = M3.Class.New(&quot;Foo2&quot;, constructors.constuctor2, FooClass1);
+            
+            var foo = new FooClass2();
+            
+            expect(foo.foo()).toEqual(&quot;This is foo&quot;);
+            expect(foo.foo2()).toEqual(&quot;This is foo2&quot;);
+        });
+        
+        it(&quot;Create a class with two level of inherit&quot;, function() {
+            var FooClass1 = M3.Class.New(&quot;Foo&quot;, constructors.constuctor1);
+            var FooClass2 = M3.Class.New(&quot;Foo2&quot;, constructors.constuctor2, FooClass1);
+            var FooClass3 = M3.Class.New(&quot;Foo3&quot;, constructors.constuctor3, FooClass2);
+            
+            var foo = new FooClass3();
+            
+            expect(foo.foo()).toEqual(&quot;This is foo&quot;);
+            expect(foo.foo2()).toEqual(&quot;This is foo2 from constructor3&quot;);
+        });
+        
+        it(&quot;Create a class with three level of inherit&quot;, function() {
+            var FooClass1 = M3.Class.New(&quot;Foo&quot;, constructors.constuctor1);
+            var FooClass2 = M3.Class.New(&quot;Foo2&quot;, constructors.constuctor2, FooClass1);
+            var FooClass3 = M3.Class.New(&quot;Foo3&quot;, constructors.constuctor3, FooClass2);
+            var FooClass4 = M3.Class.New(&quot;Foo4&quot;, constructors.constuctor4, FooClass3);
+            
+            var foo = new FooClass4();
+            
+            expect(foo.foo()).toEqual(&quot;This is foo from constructor4&quot;);
+            expect(foo.foo3()).toEqual(&quot;This is foo&quot;);
+            expect(foo.foo2()).toEqual(&quot;This is foo2 from constructor3 from constructor4&quot;);
+        });
+    });
+});</textarea>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <p>.</p>
+  </div>
+</footer>
+
+<script type="text/html" id="complexity-popover-template">
+  <div class="complexity-notice">
+    Complexity : {{ complexity.cyclomatic }} <br>
+    Length : {{ complexity.halstead.length }} <br>
+    Difficulty : {{ complexity.halstead.difficulty.toFixed(2) }} <br>
+    Est # bugs : {{ complexity.halstead.bugs.toFixed(2) }}<br>
+  </div>
+</script>
+
+<script type="text/javascript" src="../../assets/scripts/bundles/core-bundle.js"></script>
+<script type="text/javascript" src="../../assets/scripts/bundles/codemirror.js"></script>
+<script type="text/javascript" src="../../assets/scripts/codemirror.markpopovertext.js"></script>
+<script type="text/javascript" src="report.js"></script>
+<script type="text/javascript" src="report.history.js"></script>
+<script type="text/javascript" src="../../assets/scripts/plato-file.js"></script>
+</body>
+</html>

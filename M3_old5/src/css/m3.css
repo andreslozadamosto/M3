@@ -1,0 +1,234 @@
+/*
+*
+* Master Chart
+*
+*/
+.m3 {
+}
+
+/**
+*
+* Inner Chart
+*
+*/
+.m3 .m3_inner {
+}
+
+
+.m3 .button:hover {
+    cursor: pointer;
+}
+/**
+series colours
+*/
+.m3 .s1 { fill:#98abc5; } .m3 .s1:hover { fill:#5a78a1; cursor: pointer; }
+.m3 .s2 { fill:#8a89a6; } .m3 .s2:hover { fill:#6a698b; cursor: pointer; } 
+.m3 .s3 { fill:#7b6888; } .m3 .s3:hover { fill:#675772; cursor: pointer; }
+.m3 .s4 { fill:#6b486b; } .m3 .s4:hover { fill:#543854; cursor: pointer; }
+.m3 .s5 { fill:#a05d56; } .m3 .s5:hover { fill:#864e48; cursor: pointer; }
+.m3 .s6 { fill:#d0743c; } .m3 .s6:hover { fill:#c86a30; cursor: pointer; }
+.m3 .s7 { fill:#ff8c00; } .m3 .s7:hover { fill:#d87600; cursor: pointer; }
+
+.m3 .sl1 { stroke:#98abc5; stroke-width: 2px; fill: none; } /*.m3 .sl1:hover { stroke:#5a78a1; cursor: pointer; }*/
+.m3 .sl2 { stroke:#8a89a6; stroke-width: 2px; fill: none; } /*.m3 .sl2:hover { stroke:#6a698b; cursor: pointer; }*/
+.m3 .sl3 { stroke:#7b6888; stroke-width: 2px; fill: none; } /*.m3 .sl3:hover { stroke:#675772; cursor: pointer; }*/
+.m3 .sl4 { stroke:#6b486b; stroke-width: 2px; fill: none; } /*.m3 .sl4:hover { stroke:#543854; cursor: pointer; }*/
+.m3 .sl5 { stroke:#a05d56; stroke-width: 2px; fill: none; } /*.m3 .sl5:hover { stroke:#864e48; cursor: pointer; }*/
+.m3 .sl6 { stroke:#d0743c; stroke-width: 2px; fill: none; } /*.m3 .sl6:hover { stroke:#c86a30; cursor: pointer; }*/
+.m3 .sl7 { stroke:#ff8c00; stroke-width: 2px; fill: none; } /*.m3 .sl7:hover { stroke:#d87600; cursor: pointer; }*/
+
+.m3 .serieLabel_polar {
+    
+}
+
+/* --------------------------------------------------------- */
+/* CARTESIAN CHART */
+.m3 .axis text {
+    font: 10px sans-serif;
+}
+
+.m3 .axis path, .m3 .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.m3 .x path {
+    display: none;
+}
+
+
+/* ------------------------------------------------------------------- */
+/* Column CHART */
+.m3 .column { 
+}
+
+/* ------------------------------------------------------------------- */
+/* LINE CHART */
+.m3 .line {
+}
+.m3 .line .x path {
+    display: block;
+}
+
+.m3 .line .data-point circle {
+    fill: #FFF;
+    stroke: #98abc5;
+    stroke-width: 2px;
+}
+.m3 .line .data-point circle:hover {
+    stroke:#5a78a1;
+}
+.m3 .line .data-point:hover {
+    cursor: pointer;
+}
+
+
+/* ------------------------------------------------------------------- */
+/* Area CHART */
+
+.m3 .area .data-point circle {
+    fill: #FFF;
+    stroke: #98abc5;
+    stroke-width: 2px;
+}
+.m3 .area .data-point circle:hover {
+    stroke:#5a78a1;
+}
+.m3 .area .data-point:hover {
+    cursor: pointer;
+}
+
+.m3 .area .s1:hover { fill:#98abc5; cursor: auto; }
+
+/* ------------------------------------------------------------------- */
+/* Pie CHART */
+.m3 .pie {
+}
+
+.m3 .pie .arc path {
+  stroke: #fff;
+}
+
+/* ------------------------------------------------------------- */
+/**
+*
+* KPI Component
+*
+*/
+.m3 .m3_kpi .txtKPI {
+    font-family: Verdana;
+    font-size  : 20px;
+    fill       : grey;
+    text-anchor: middle;
+}
+
+.m3 .m3_kpi .acomplishment_background {
+    fill: #ddd;
+}
+
+.m3 .m3_kpi .acomplishment_ok {
+    fill: green;
+}
+
+.m3 .m3_kpi .acomplishment_bad {
+    fill: red;
+}
+.m3 .m3_kpi .acomplishment_bad:hover {
+    fill: black;
+}
+
+.m3 .m3_kpi .acomplishment_zero {
+    fill: grey;
+}
+
+
+.m3 .m3_kpicomplete .title {
+    font-family: Verdana;
+    font-size: 24px;
+    fill: grey;
+}
+
+.m3 .m3_kpicomplete .obj_title {
+    font-family: Verdana;
+    font-size: 10px;
+    fill: grey;
+}
+
+.m3 .m3_kpicomplete .obj_value {
+    font-family: Verdana;
+    font-size: 10px;
+    fill: blue;
+}
+
+.m3 .m3_kpicomplete .real_title {
+    font-family: Verdana;
+    font-size: 10px;
+    fill: grey;
+}
+
+.m3 .m3_kpicomplete .real_value {
+    font-family: Verdana;
+    font-size: 10px;
+    fill: blue;
+}
+
+
+
+/* ------------------------------------------------------------------------------ */
+/* tooltip */
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  pointer-events: none;
+}
+
+/* Northward tooltips */
+.d3-tip.n:after {
+  content: "\25BC";
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+  text-align: center;
+}
+
+/* Eastward tooltips */
+.d3-tip.e:after {
+  content: "\25C0";
+  margin: -4px 0 0 0;
+  top: 50%;
+  left: -8px;
+}
+
+/* Southward tooltips */
+.d3-tip.s:after {
+  content: "\25B2";
+  margin: 0 0 1px 0;
+  top: -8px;
+  left: 0;
+  text-align: center;
+}
+
+/* Westward tooltips */
+.d3-tip.w:after {
+  content: "\25B6";
+  margin: -4px 0 0 -1px;
+  top: 50%;
+  left: 100%;
+}

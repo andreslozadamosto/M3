@@ -1,0 +1,21 @@
+{
+  "name": "M3",
+  "version": "1.0.0",
+  "authors": [
+    "Andres Lozada Mosto <alfathenus@gmail.com>"
+  ],
+  "description": "M3 library wrapper of D3js",
+  "keywords": [
+    "d3",
+    "datavisualization",
+    "charts"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

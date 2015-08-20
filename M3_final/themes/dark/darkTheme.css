@@ -1,0 +1,13 @@
+.m3{}
+
+.m3 .background {
+	fill:#CCC;
+    fill-opacity:1;
+}
+
+.m3 .canvas {}
+
+.m3 .canvas .background {
+	fill:#666;
+    fill-opacity:1;
+}

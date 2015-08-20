@@ -1,0 +1,57 @@
+/* --------------------
+Page base
+--------------------- */
+body, html{ 
+    background-color: #F2F2F2;
+}
+
+/* --------------------
+Bootstrap styles customizations
+--------------------- */
+.navbar {
+    background-color: #5C97BF;
+    border-radius: 0px;
+}
+.navbar-brand {
+    color: #FFF;
+    font-size: 2em;
+}
+
+/* --------------------
+Page styles
+--------------------- */
+li {
+    list-style-type: none;
+}
+ul {
+    padding-left: 0px;
+}
+
+nav ul li {
+    font-weight: bold;
+    color: #5C97BF;
+    line-height: 2em;
+    border-bottom: 1px dotted #CCC;
+}
+
+nav ul li ul {
+    padding-left: 1em;
+}
+
+nav ul li ul li {
+    font-weight: normal;
+    cursor: pointer;
+}
+
+nav ul li ul li:last-child  {
+    border-bottom: 1px none #CCC;
+}
+
+#chartContainer {
+    width: 100%;
+    height: 80%;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    padding: 4px;
+    background-color: #FEFEFE;
+}

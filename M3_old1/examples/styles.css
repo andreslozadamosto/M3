@@ -1,0 +1,29 @@
+
+
+body {
+  font: 10px sans-serif;
+}
+
+.row {
+    margin-bottom: 10px;
+}
+
+
+.chartContainer {
+    border: solid 1px #CCCCCC;
+    border-radius: 5px;
+    height: 200px;
+}
+.chart {
+    width: 200px;
+}
+
+.chart-ancho {
+     width: 400px;
+}
+
+.kpi_chart_container {
+    height: 200px;
+    /*border: solid 1px #CCCCCC;
+    border-radius: 5px;*/
+}

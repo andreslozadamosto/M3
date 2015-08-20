@@ -1,0 +1,78 @@
+<html lang="en">
+    <head>
+        <title>Prueba Pie y Donut</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" />-->
+        <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="../src/css/m3.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="page-header">
+                <h1>Examples</h1>
+            </div>
+            
+            <h3>Columns Charts</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="chartContainer">
+                        <div id="axis1" class="chart center-block">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="chartContainer">
+                        <div id="axis2" class="chart-ancho center-block">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="chartContainer">
+                        <div id="axis3" class="chart-ancho center-block">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="chartContainer">
+                        <div id="axis1" class="chart center-block">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="chartContainer">
+                        <div id="axis2" class="chart-ancho center-block">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="../src/core/pollyfil.js"></script>
+        <script src="data.js"></script>
+        <script src="../vendor/jquery/jquery.js"></script>
+        <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="../vendor/d3/d3.min.js" charset="utf-8"></script>
+        <script src="../vendor/d3-tip/index.js" charset="utf-8"></script>
+        
+        <script src="../lib/m3.js" charset="utf-8"></script>
+        <script>
+            var kpiAtricion = new M3.KPIComplete();
+            kpiAtricion.draw([{label:"Target", value:40, target:10, real:30}], {
+                        container:"#axis1",
+                        width:350,
+                        height:100,
+                        donutWidth:10,
+                        titleItem: "label",
+                        targetItem: "target",
+                        realItem: "real"
+                        });
+        </script>
+    </body>
+</html>

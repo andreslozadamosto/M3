@@ -1,0 +1,86 @@
+<html lang="en">
+    <head>
+        <title>M3 examples</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../src/css/m3.css">
+        <link rel="stylesheet" href="../vendor/jquery-ui/css/ui-lightness/jquery-ui-1.10.4.min.css">
+        <style>
+            #chartContainer {
+                border: 1px solid grey;
+                width: 200px;
+                height: 200px;
+                padding: 10px;
+            }
+            .row:nth-child(2) {
+                margin-top: 20px;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div>
+                    <button id="resize" class="btn">Hola</button>
+                </div>
+            </div>
+            <div class="row">
+                <div id="chartContainer" class="ui-widget-content">
+                </div>
+            </div>
+        </div>
+        
+        <script src="data.js"></script>
+        <script src="../vendor/jquery/jquery.js"></script>
+        <script src="../vendor/jquery-ui/js/jquery-ui-1.10.4.min.js"></script>
+        <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+        
+        <script src="../vendor/d3/d3.min.js" charset="utf-8"></script>
+        <script src="../vendor/d3-tip/index.js" charset="utf-8"></script>
+        
+        <script src="../lib/m3.js" charset="utf-8"></script>
+        
+        <script>
+            $( "#chartContainer" ).on("resize", function() {
+                columnChart.resize();
+            });
+            $( "#chartContainer" ).resizable({
+                minHeight: 100,
+                minWidth: 200
+            });
+            var data = [{label:"uno", value:798}, {label:"dos", value:533}, {label:"tres", value:986}];
+            var columnChart = new M3.ColumnChart();
+            //columnChart.behaviours = [new M3.behaviours.Responsive()];
+            columnChart.draw(data, {
+                                    container:"#chartContainer", 
+                                    responsive:true,
+                                    axis: [
+                                        { pos: "left" },
+                                        { pos:"bottom", clazz: "Axis.CategoryAxis" },
+                                        { pos: "right" },
+                                        { pos:"top", clazz: "Axis.CategoryAxis" }]
+                                    });
+        </script>
+        
+        <script>
+            var resizeValues = [{x:100, y:100}, {x:300, y:160}, {x:180, y:300}, {x:230, y:100}]
+            var min = 0;
+            var max = 3;
+            function getRandomInt (min, max) {
+                return Math.floor(Math.random() * (max - min + 1)) + min;
+            }
+            $("#resize").on("click", function() {
+                var rez = resizeValues[getRandomInt(min, max)];
+                $("#chartContainer").css("width", rez.x);
+                $("#chartContainer").css("height", rez.y);
+                var w = d3.select("#chartContainer")[0][0].clientWidth;
+                var h = d3.select("#chartContainer")[0][0].clientHeight;
+                h = (h==0)?198:h;
+                columnChart.resize(w,h);
+            });
+        </script>
+    </body>
+</html>

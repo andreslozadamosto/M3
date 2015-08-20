@@ -1,0 +1,11 @@
+{
+  "amd": [
+    "bin/amd/*"
+  ],
+  "global": [
+    "bin/global"
+  ],
+  "commons": [
+    "bin/commons"
+  ]
+}

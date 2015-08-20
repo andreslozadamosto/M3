@@ -1,0 +1,131 @@
+<html lang="en">
+    <head>
+        <title>M3 examples</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="../src/css/m3.css">
+        
+    </head>
+    <body>
+        <!-- header -->
+        <div class="navbar" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <span class="navbar-brand">M3 - Examples</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- container -->
+        <div class="container">
+            <div class="row">
+                <nav class="col-lg-3 col-md-3 col-sm-3">
+                    <ul>
+                        <li id="dataviz" class="menuL1">Axis Chart
+                            <ul>
+                            </ul>
+                        </li>
+                        <li id="axis" class="menuL1">Axis Chart
+                            <ul>
+                            </ul>
+                        </li>
+                        <li id="column" class="menuL1">Column Chart
+                            <ul>
+                            </ul>
+                        </li>
+                        <li id="line" class="menuL1">Line Chart
+                            <ul>
+                            </ul>
+                        </li>
+                        <li id="area" class="menuL1">Area Chart
+                            <ul>
+                            </ul>
+                        </li>
+                        <li id="pie" class="menuL1">Pie Chart
+                            <ul>
+                            </ul>
+                        </li>
+                        
+                    </ul>
+                </nav>
+                <section class="col-lg-9 col-md-9 col-sm-9">
+                    <div id="chartContainer">
+
+                    </div>
+                </section>
+            </div>
+        </div>
+              
+        <!--
+        External Libreries
+        -->
+        <script src="../src/core/pollyfil.js"></script>
+        <script src="data/data.js"></script>
+        <script src="vendor/jquery/jquery.js"></script>
+        <script src="vendor/jquery-plugins/attrchange.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="vendor/d3/d3.min.js" charset="utf-8"></script>
+        <script src="vendor/d3-tip/index.js" charset="utf-8"></script>
+        
+        
+        <!--
+        M3 Libraries
+        -->
+        <!-- utils -->
+        <script src="../src/core/utils/Class.js"></script>
+        <script src="../src/core/utils/Extend.js"></script>
+        <script src="../src/core/utils/Mixin.js"></script>
+        <script src="../src/core/utils/ValidationM3.js"></script>
+                
+        <!-- chart base -->
+        <script src="../src/M3.js"></script>
+        <script src="../src/core/utils/Utils.js"></script>
+        <script src="../src/core/DataViz.js"></script>
+        <script src="../src/core/AbstractChart.js"></script>
+        <script src="../src/core/Chart.js"></script>
+        
+        <!-- Axis -->
+        <script src="../src/core/axis/AxisItem.js"></script>
+        <script src="../src/core/axis/CategoryAxis.js"></script>
+        <script src="../src/core/axis/CategoryPointsAxis.js"></script>
+        <script src="../src/core/axis/LinealAxis.js"></script>
+        <script src="../src/core/axis/Stacked100Axis.js"></script>
+        <script src="../src/core/axis/StackedAxis.js"></script>
+        <script src="../src/core/axis/AxisManager.js"></script>
+        
+        <!-- series -->
+        <script src="../src/core/series/ChartSerie.js"></script>
+        <script src="../src/core/series/AreaSerie.js"></script>
+        <script src="../src/core/series/ColumnSerie.js"></script>
+        <script src="../src/core/series/GroupColumnSerie.js"></script>
+        <script src="../src/core/series/LineSerie.js"></script>
+        <script src="../src/core/series/StackedAreaSerie.js"></script>
+        <script src="../src/core/series/StackedColumnSerie.js"></script>
+        
+        <!-- charts -->
+        <script src="../src/core/charting/AreaChart.js"></script>
+        <script src="../src/core/charting/ColumnChart.js"></script>
+        <script src="../src/core/charting/LineChart.js"></script>
+        <script src="../src/core/charting/StackedAreaChart.js"></script>
+        <script src="../src/core/charting/StackedColumnChart.js"></script>
+        
+        <!--
+        Examples code
+        -->
+        <script src="js/Defaults.js" charset="utf-8"></script>
+        <script src="js/Examples.js" charset="utf-8"></script>
+        
+        
+        <script src="js/parts/dataviz/dataviz.js" charset="utf-8"></script>
+        <script src="js/parts/columncharts/simplecolumnchart.js" charset="utf-8"></script>
+        <!--<script src="js/parts/columncharts/stakedColumnChart.js" charset="utf-8"></script>-->
+        <script src="js/parts/axis/simpleAxis.js" charset="utf-8"></script>
+        <script src="js/parts/axis/simpleAxisManager.js" charset="utf-8"></script>
+        
+        <script src="js/index.js" charset="utf-8"></script>
+        
+    </body>
+</html>

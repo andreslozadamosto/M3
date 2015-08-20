@@ -1,0 +1,86 @@
+<html lang="en">
+    <head>
+        <title>Prueba Pie y Donut</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" />-->
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/m3.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="page-header">
+                <h1>KPI</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="kpi_chart_container">
+                        <div id="chartSellOut" class="chart center-block">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="kpi_chart_container">
+                        <div id="chartAtricion" class="chart center-block">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="kpi_chart_container">
+                        <div id="chartPenetracion" class="chart center-block">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="kpi_chart_container">
+                        <div id="chartCobertura" class="chart center-block">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="chartContainer">
+                        <div id="chartContainer1" class="chart center-block">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="chartContainer">
+                        <div id="chartContainer2" class="chart center-block">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            if (typeof Object.create != 'function') {
+                (function () {
+                    var F = function () {};
+                    Object.create = function (o) {
+                        if (arguments.length > 1) { throw Error('Second argument not supported');}
+                        if (o === null) { throw Error('Cannot set a null [[Prototype]]');}
+                        if (typeof o != 'object') { throw TypeError('Argument must be an object');}
+                        F.prototype = o;
+                        return new F();
+                    };
+                })();
+            }
+        </script>
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script src="vendor/d3/d3.js" charset="utf-8"></script>
+        <script src="js/AbstractM3.js"></script>
+        <script src="js/Table.js"></script>
+        <script src="js/AbstractChart.js"></script>
+        <script src="js/AbstractPolarChart.js"></script>
+        <script src="js/pie.js"></script>
+        <script src="js/donut.js"></script>
+        <script src="js/KPI.js"></script>
+        <script src="js/kpiComplete.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
