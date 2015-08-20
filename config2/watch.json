@@ -1,8 +1,0 @@
-{
-  "files": [
-    "<%= jshint.all %>"
-  ],
-  "tasks": [
-    "jshint"
-  ]
-}
