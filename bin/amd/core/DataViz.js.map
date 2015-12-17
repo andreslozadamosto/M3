@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../src/core/DataViz.js"],"names":[],"mappings":";;;;;;;;;;;YAOS,OAAO,GAAP,OAAO","file":"DataViz.js","sourcesContent":["\n\nfunction DataViz () {\n    console.log(\"Soy DataViz\");\n}\n\n\nexport { DataViz };"]}

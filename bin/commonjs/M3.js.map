@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/M3.js"],"names":[],"mappings":";;;;AAEA,aAFQ,OAAO,GAEN,CAAC","file":"M3.js","sourcesContent":["import {DataViz} from './core/DataViz';\n\nDataViz();"]}

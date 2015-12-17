@@ -1,16 +1,21 @@
 'use strict';
 
-// Empties folders to start fresh
 module.exports = {
-	dist   : {
-		files : [
-			{
-				dot : true,
-				src : [
-					'.tmp'
-				]
-			}
-		]
+	///////////////////////////////////////////////
+	// Clear release folder
+	///////////////////////////////////////////////
+	binFolder: {
+		src: ["bin/*"]
+	}
+	
+	/*dist: {
+		files: [{
+			dot: true,
+			src: [
+				'.tmp'
+			]
+		}]
 	},
-	server : '.tmp'
+	server: '.tmp',*/
+	
 };
