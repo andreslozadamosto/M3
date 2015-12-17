@@ -1,6 +1,6 @@
 {
   "name": "M3.Charting",
-  "version": "0.5.0",
+  "version": "1.0.0",
   "description": "M3 charting is a datavisualization librery based on D3.",
   "homepage": "",
   "devDependencies": {
