@@ -17,7 +17,7 @@
     "load-grunt-tasks": "^2.0.0"
   },
   "scripts": {
-    "test": "grunt jasmine"
+    "test": "grunt jasmine2"
   },
   "repository": {
     "type": "git",
