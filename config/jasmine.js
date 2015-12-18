@@ -2,6 +2,24 @@
 
 // Empties folders to start fresh
 module.exports = {
+    all: {
+        "src": [
+            "src/**/*.js",
+        ],
+        "options": {
+            "specs": [
+                "tests/**/*Spec.js",
+            ],
+            "helpers": [
+                "vendor/jasmine-query-master/lib/jasmine-jquery.js",
+                "node_modules/babel-register/lib/node.js"
+            ],
+            "vendor": [
+                "vendor/d3/d3.min.js",
+                "vendor/jquery/jquery.js"
+            ]
+        }
+    },
     "base": {
         "src": [
             "src/M3.js",
