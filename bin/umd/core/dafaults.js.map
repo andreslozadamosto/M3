@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../src/core/dafaults.js"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;gBAIQ,eAAe,GAAf,eAAe","file":"dafaults.js","sourcesContent":["var DataVizDefaults = {\n        datavizMinWidth: 200,\n        datavizMinHeigth: 100\n    }\nexport {DataVizDefaults}"]}

@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"M3.js","sourcesContent":[]}
+{"version":3,"sources":["../../src/M3.js"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;YAQQ,OAAO","file":"M3.js","sourcesContent":["import {dataviz} from './core/DataViz';\n\n/*dataviz().draw();*/\n\nvar M3 = {\n    dataviz:dataviz\n}\n\nexport {dataviz}\n\n//https://github.com/d3/d3-bundler\n//https://www.npmjs.com/~mbostock\n//http://es6-features.org/#ValueExportImport"]}

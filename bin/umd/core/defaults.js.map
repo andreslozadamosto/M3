@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../src/core/defaults.js"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;gBAKQ,eAAe,GAAf,eAAe","file":"defaults.js","sourcesContent":["var DataVizDefaults = {\n        container: \"#M3Container\",\n        datavizMinWidth: 200,\n        datavizMinHeigth: 100\n    }\nexport {DataVizDefaults}"]}

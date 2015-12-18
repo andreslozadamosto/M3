@@ -4,6 +4,7 @@
   "description": "M3 charting is a datavisualization librery based on D3.",
   "homepage": "",
   "devDependencies": {
+    "babel-core": "^6.3.21",
     "babel-plugin-transform-es2015-modules-amd": "^6.3.13",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.3.16",
     "babel-plugin-transform-es2015-modules-systemjs": "^6.3.13",
@@ -32,7 +33,9 @@
     "url": "http://github.com/npm/npm.git"
   },
   "dependencies": {
-    "d3": "^3.5.11"
+    "d3": "^3.5.11",
+    "d3-selection": "^0.4.12",
+    "d3-selection-multi": "^0.2.8"
   },
   "license": "MIT"
 }
