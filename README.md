@@ -1,5 +1,8 @@
+Update 1:
 If you want try this library please use the tag version because the master is in active development on new behaviours and a complete refactoring. Thanks!
 
+Update 2:
+the version 1.0.0 it's coming with ES6 using Babel as precompiler and a custom builder to create your own version of the library with the only modules that you need (following the new version of D3). Check the branch 1.0.0.
 
 # M3
 
